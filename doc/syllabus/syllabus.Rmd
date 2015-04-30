@@ -1,0 +1,82 @@
+Ecological Analytics
+====================
+
+**Harvard Forest**
+June 2015
+9-10am EDT
+
+*Instructor*: Matthew Lau (people.fas.harvard.edu/~matthewklau)
+
+Students will learn how to use programming for ecological analyses
+using the R programming language and gain experience:
+
++ Managing analytical aspects of a project
++ Inputting, manipulating and exporting data
++ Statistical functions
++ Plotting data patterns
++ Coding and software best practices
++ Getting more help, experience and practice
+
+**Although statistics will be introduced very
+briefly, this will not be a statistics class.**
+
+*Pre-requisites*: experience with using basic computer software.
+*Required Materials*: laptop or access to some computing device.
+
+
+*Calendar*
+June 1 (Monday), 7:45-8PM: brief intro to ecological analyses.
++ Why program? 
++ Brief introduction to project management
++ Connect to syllabus and course materials
+
+June 2 (Tuesday), 9-10AM: Analytics and programming basics.
+**Before Class**
++ Connect to Harvard Forest Guest wireless*
++ Install R on your computer: http://lib.stat.cmu.edu/R/CRAN/*
++ Download the example project: https://github.com/HarvardForest/myProject/archive/master.zip
+
+**In Class**
++ Introduction to analytics, the usefulness of programming and R
++ Present the overarching framework of analytics for a project
+(document organization, task scheduling, data management, analytics
+management, keeping an analytics notebook)
++ Basic functions/operations and tasks (e.g., do simple calculations
+on scalars and vectors)
++ Objects
++ Functions
++ Scripting and annotation
+
+**Challenge**
+
+June 4 (Thursday): Data management
+
+**In Class**
++ Inputting and managing data overview
++ Data structure and spreadsheets
++ Data reading functions (read.table)
++ Manipulating vectors (sorting, ordering)
++ Manipulating matrices
+
+**Challenge**
+
+June 9 (Tuesday): Data analysis
+
+**In Class**
++ Calculating basic statistics (mean and variance)
++ Scatterplots, Barplots and Histograms
++ Mean differences
++ Getting data from the HF archive
+
+June 16 (Tuesday): Programming
++ Advanced object classes (dataframes and lists)
++ Loops and applys
++ Data provenance
++ Versioning
++ Software ethics and hackathons?
+
+*Further Readings and Resources*:
++ R Cheat Sheet
+++ http://cran.r-project.org/doc/contrib/Short-refcard.pdf
++ Version Control
+++ https://help.github.com/articles/good-resources-for-learning-git-and-github/
