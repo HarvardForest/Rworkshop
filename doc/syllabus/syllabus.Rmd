@@ -5,7 +5,7 @@ Ecological Analytics
 June 2015
 9-10am EDT
 
-*Instructor*: Matthew Lau (people.fas.harvard.edu/~matthewklau)
+*Instructor*: Matthew Lau (http://people.fas.harvard.edu/~matthewklau)
 
 Students will learn how to use programming for ecological analyses
 using the R programming language and gain experience:
