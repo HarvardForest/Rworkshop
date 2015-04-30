@@ -24,7 +24,9 @@ briefly, this will not be a statistics class.**
 *Required Materials*: laptop or access to some computing device.
 
 
-*Calendar*
+Calendar
+--------
+
 June 1 (Monday), 7:45-8PM: brief intro to ecological analyses.
 + Why program? 
 + Brief introduction to project management
@@ -75,8 +77,11 @@ June 16 (Tuesday): Programming
 + Versioning
 + Software ethics and hackathons?
 
-*Further Readings and Resources*:
+Readings and Resources
+----------------------
 + R Cheat Sheet
 ++ http://cran.r-project.org/doc/contrib/Short-refcard.pdf
 + Version Control
-++ https://help.github.com/articles/good-resources-for-learning-git-and-github/
+++ https://help.github.com/articles/good-resources-for-learning-git-and-github
++ Code for America
+++ https://www.codeforamerica.org
