@@ -1,0 +1,16 @@
+Analytics Survey
+
+Pre
+- spreadsheet
+- stats
+- programming language
+- plots
+- loop, function, algorithm
+- math, algebra, calc, trig
+- project management
+- data archival
+- data provenance
+- meta data
+
+Post
+- 

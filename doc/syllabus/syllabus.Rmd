@@ -64,6 +64,7 @@ June 4 (Thursday): Data management
 - Manipulating vectors (sorting, ordering)
 - Manipulating matrices = sorting and appending
 - Data reading functions (read.csv,read.table)
+- Working directory
 - Advanced data (mode/class, data frames and lists)
 
 **Challenge**
