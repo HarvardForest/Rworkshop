@@ -1,16 +1,24 @@
 Analytics Survey
 
-Pre
-- spreadsheet
-- stats
-- programming language
-- plots
-- loop, function, algorithm
-- math, algebra, calc, trig
-- project management
-- data archival
-- data provenance
-- meta data
+Do you have project management training?
 
-Post
-- 
+How confident are you with your ability to conduct a research project?
+0-no confidence to 5-no problem
+
+How often do your use a spreadsheet?
+0-never,1-yearly,2-monthly,3-daily
+
+How much statistical experience do you have?
+0-none,1-one class,2-several classes,3-use stats regularly
+
+How much programming experience do you have?
+0-none,1-took a class that used a programming language,2-program regularly
+
+What is meta-data?
+
+What is data provenance?
+
+Draw a scatterplot.
+
+Define/describe one of the following: a for-loop, an integral or a plant.
+
