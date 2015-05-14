@@ -69,8 +69,14 @@ on scalars and vectors)
 - Entering data by hand
 - Manipulating vectors (sorting, ordering)
 - Manipulating matrices = sorting and appending
+<<<<<<< HEAD
 - Inputting data (read.csv,read.table)
 - Advanced data = lists
+=======
+- Data reading functions (read.csv,read.table)
+- Working directory
+- Advanced data (mode/class, data frames and lists)
+>>>>>>> 2c44b1ae3012c0eacfd0140e158a0d8c54f6f843
 
 *Post-Class Challenge*
 
