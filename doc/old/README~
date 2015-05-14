@@ -1,0 +1,67 @@
+Workshop on Coding in Ecology
+Harvard Forest REU, May 2015
+
+0. Project Management Data and Analytics
+- Data management is under-taught in ecology (Strasser and Hampton
+2012, Ecosphere)
+- Noble 2009
+- README, docs, data, src, results, LICENSE
+- Calendar
+- Understanding what you *did* can often be more useful than understanding
+what you're doing.
+
+1. Why learn programming?
+
+- You can help people with code
+- Estimated 1.4M CS jobs created over 10 years and an estimated
+  400,000 CS graduates https://www.youtube.com/watch?v=BjKmWk3oE4E
+
+2. What do you need?
+
+- Learn a language
+- Script and annotate
+- Learn how to break down a task into subtasks
+
+3. R?
+- Ranked 5th among software skill in demand (2014 survey of job search
+  websites), open-source and free
+- Downloading and installing
+- What's a function()?
+
+4. Scripting 
+- R's built-in editor
+- Annotation
+- Running scripts (line by line)
+
+5. Working directory (connect to project structure)
+
+6. Debugging (not if, but when...)
+- syntax basics (the importance of completion and commas)
+- tab completion
+
+7. Basic Analytics
+- Data structure and import
+- What about meta-data?
+- Plotting, scatterplot and barplot
+- Statistics (values that tell us about samples: mean, median, mode, range, variance)
+- Hypothesis testing (inference beyond our sample)
+- t-test and correlation
+- p-value
+
+8. Version control
+- versions of scripts
+- versions of data
+- versions of analyses 
+
+9. Aids to Learning
+- cheat sheet
+- googling
+- 
+
+10. Example problem set
+- Pulling data from the Harvard Forest Archives
+- Analyzing data from texts
+- Data simulation
+
+11. Coding ethics
+- wikipedia page on hacking
