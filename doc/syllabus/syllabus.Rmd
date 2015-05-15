@@ -3,7 +3,7 @@ Ecological Analytics with R
 
 <!-- render('syllabus.Rmd',);render('syllabus.Rmd',output_format='pdf_document') -->
 
-*Location*: Harvard Forest, Fisher Museum
+*Location*: Harvard Forest
 
 *Instructor*: Matthew Lau (http://people.fas.harvard.edu/~matthewklau)
 
@@ -32,6 +32,8 @@ Class Schedule
 
 **June 1 (Monday)**
 
+**Location: Fisher Museum**
+
 7:45-8PM: brief intro to ecological analyses.
 
 - Why program? 
@@ -39,6 +41,8 @@ Class Schedule
 - Connect to syllabus and course materials
 
 **June 2 (Tuesday)**
+
+**Location: Fisher Museum**
 
 *Before Class*
 
@@ -48,35 +52,31 @@ Class Schedule
 
 *9-10AM: Analytics and programming basics*
 
-- Present the overarching analytics framework 
+- Analytics project framework 
 <!-- (Noble 2009 =  -->
 <!--   document organization, task scheduling, data management, analytics -->
 <!--   management, keeping an analytics notebook) -->
-- Basic functions/operations and tasks (e.g., do simple calculations
-on scalars and vectors)
-- Objects = way to keep data in your memory
-- Functions = name(arguments)
-- Scripting and annotation = save your code and notes about code
+- Operations
+- Objects 
+- Functions
+- Scripting and annotation (Save Our Source!)
+- Setting the working directory
 
 *Post-Class Challenge*
 
 - What's the area of a square with a side = 10 cm?
 - What's the circumference of a circle with diameter 10 cm?
 
-**June 4 (Thursday)*
+**June 4 (Thursday)**
+
+**Location: Seminar Room**
 
 *9-10AM: Data, Data and more Data!*
 - Entering data by hand
 - Manipulating vectors (sorting, ordering)
-- Manipulating matrices = sorting and appending
-<<<<<<< HEAD
+- Manipulating matrices (sorting, appending)
 - Inputting data (read.csv,read.table)
 - Advanced data = lists
-=======
-- Data reading functions (read.csv,read.table)
-- Working directory
-- Advanced data (mode/class, data frames and lists)
->>>>>>> 2c44b1ae3012c0eacfd0140e158a0d8c54f6f843
 
 *Post-Class Challenge*
 
@@ -85,9 +85,11 @@ on scalars and vectors)
 
 **June 9 (Tuesday)**
 
+**Location: Seminar Room**
+
 *9-10AM: Analysis*
 
-- Plotting data overview
+- Overview of data visualization
 - Calculating basic statistics (mean and variance)
 - Writing your own functions (se: input, process, output)
 - What are packages? (e.g., *gplot*)
@@ -100,16 +102,18 @@ on scalars and vectors)
 
 **June 16 (Tuesday)**
 
+**Location: Seminar Room**
+
 *9-10AM: Best Practices and Some Advanced Topics*
 
 - Organizing code
 - Getting data from the HF archives
-- Versioning = github
 - Loops and applys
-- Simulating data = runif and rnorm
+- Versioning with github
+- Simulating data (runif and rnorm)
 - Data and software ethics
 - Data provenance
-- Hackathon?
+- The Hackathon
 
 *Post-Class Challenge*
 
