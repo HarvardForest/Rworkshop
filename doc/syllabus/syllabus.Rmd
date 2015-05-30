@@ -1,7 +1,9 @@
-Ecological Analytics
-====================
+Ecological Analytics with R
+===========================
 
-*Location*: Harvard Forest June 2015 9-10am EDT
+<!-- render('syllabus.Rmd',);render('syllabus.Rmd',output_format='pdf_document') -->
+
+*Location*: Harvard Forest
 
 *Instructor*: Matthew Lau (http://people.fas.harvard.edu/~matthewklau)
 
@@ -18,84 +20,104 @@ Ecological Analytics
 **Although statistics will be introduced very
 briefly, this will not be a statistics class.**
 
-*Pre-requisites*: experience with using basic computer software.
-*Required Materials*: laptop or access to some computing device.
+*Pre-requisites*: experience with using basic computer software
 
+*Required Materials*: laptop or access to some computing device
 
-Calendar
---------
+*No laptop?* You can borrow a Harvard Forest laptop (contact
+  Manisha Patel)
 
-June 1 (Monday), 7:45-8PM: brief intro to ecological analyses.
+Class Schedule
+--------------
+
+**June 1 (Monday)**
+
+**Location: Fisher Museum**
+
+7:45-8PM: brief intro to ecological analyses.
+
 - Why program? 
 - Brief introduction to project management
 - Connect to syllabus and course materials
 
-June 2 (Tuesday), 9-10AM: Analytics and programming basics.
-**Before Class**
+**June 2 (Tuesday)**
 
-- Connect to Harvard Forest Guest wireless*
+**Location: Fisher Museum**
+
+*Before Class*
+
+- Connect to Harvard Forest wireless
 - Install R on your computer: http://lib.stat.cmu.edu/R/CRAN/*
 - Download the example project: https://github.com/HarvardForest/myProject/archive/master.zip
 
-**In Class**
+*9-10AM: Analytics and programming basics*
 
-- Introduction to analytics, the usefulness of programming and R
-- Present the overarching analytics framework (Noble 2009 = document
-  organization, task scheduling, data management, analytics
-  management, keeping an analytics notebook)
-- Basic functions/operations and tasks (e.g., do simple calculations
-on scalars and vectors)
-- Objects = way to keep data in your memory
-- Functions = name(arguments)
-- Scripting and annotation = save your code and notes about code
+- Analytics project framework 
+<!-- (Noble 2009 =  -->
+<!--   document organization, task scheduling, data management, analytics -->
+<!--   management, keeping an analytics notebook) -->
+- Operations
+- Objects 
+- Functions
+- Scripting and annotation (Save Our Source!)
+- Setting the working directory
 
-**Challenge**
+*Post-Class Challenge*
 
 - What's the area of a square with a side = 10 cm?
-- What's the circumference of a circle with dimeter 10 cm?
-- Find a cool equation and play with it in R (e.g. E=mc^2)!
+- What's the circumference of a circle with diameter 10 cm?
 
-June 4 (Thursday): Data management
+**June 4 (Thursday)**
 
-**In Class**
+**Location: Seminar Room**
 
-- Data structure and spreadsheets
-- Inputting and managing data overview
+*9-10AM: Data, Data and more Data!*
+- Entering data by hand
 - Manipulating vectors (sorting, ordering)
-- Manipulating matrices = sorting and appending
-- Data reading functions (read.csv,read.table)
-- Working directory
-- Advanced data (mode/class, data frames and lists)
+- Manipulating matrices (sorting, appending)
+- Inputting data (read.csv,read.table)
+- Advanced data = lists
 
-**Challenge**
+*Post-Class Challenge*
 
 - How does a circle's circumference change as it's diameter changes?
+- Find a cool equation and play with it in R (e.g. E=mc^2)!
 
-June 9 (Tuesday): Data analysis
+**June 9 (Tuesday)**
 
-**In Class**
+**Location: Seminar Room**
 
-- Getting data from the HF archives
+*9-10AM: Analysis*
+
+- Overview of data visualization
 - Calculating basic statistics (mean and variance)
-- Scatterplots, Barplots and Histograms
-- Components of the plot (axis, labels, colors, cex, etc...)
 - Writing your own functions (se: input, process, output)
-- Packages = gplot
+- What are packages? (e.g., *gplot*)
 - Barplot with error bars
 
-**Challenge**
+*Post-Class Challenge*
 
-- Analyze an HF dataset
+- Create a plot of how a circle's circumference chances as its
+  diameter changes.
 
-June 16 (Tuesday): Data, Programming and Research Tips and Best Practices 
+**June 16 (Tuesday)**
 
-- Modular Code = just make the wheel once
-- Versioning = github
+**Location: Seminar Room**
+
+*9-10AM: Best Practices and Some Advanced Topics*
+
+- Organizing code
+- Getting data from the HF archives
 - Loops and applys
-- Simulating data = runif and rnorm
+- Versioning with github
+- Simulating data (runif and rnorm)
 - Data and software ethics
 - Data provenance
-- Hackathon?
+- The Hackathon
+
+*Post-Class Challenge*
+
+- Find and analyze an HF dataset
 
 Readings and Resources
 ----------------------

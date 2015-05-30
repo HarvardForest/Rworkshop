@@ -61,11 +61,12 @@ img {
 
 
 
-<div id="ecological-analytics" class="section level1">
-<h1>Ecological Analytics</h1>
-<p><strong>Harvard Forest</strong> June 2015 9-10am EDT</p>
+<div id="ecological-analytics-with-r" class="section level1">
+<h1>Ecological Analytics with R</h1>
+<!-- render('syllabus.Rmd',);render('syllabus.Rmd',output_format='pdf_document') -->
+<p><em>Location</em>: Harvard Forest</p>
 <p><em>Instructor</em>: Matthew Lau (<a href="http://people.fas.harvard.edu/~matthewklau" class="uri">http://people.fas.harvard.edu/~matthewklau</a>)</p>
-<p>Students will learn how to use programming for ecological analyses using the R programming language and gain experience:</p>
+<p><em>Goal</em>: Students will learn how to use the R programming language for ecological analyses and gain experience:</p>
 <ul>
 <li>Managing analytical aspects of a project</li>
 <li>Inputting, manipulating and exporting data</li>
@@ -75,26 +76,90 @@ img {
 <li>Getting more help, experience and practice</li>
 </ul>
 <p><strong>Although statistics will be introduced very briefly, this will not be a statistics class.</strong></p>
-<p><em>Pre-requisites</em>: experience with using basic computer software. <em>Required Materials</em>: laptop or access to some computing device.</p>
-<div id="calendar" class="section level2">
-<h2>Calendar</h2>
-<p>June 1 (Monday), 7:45-8PM: brief intro to ecological analyses. + Why program? + Brief introduction to project management + Connect to syllabus and course materials</p>
-<p>June 2 (Tuesday), 9-10AM: Analytics and programming basics. <strong>Before Class</strong> + Connect to Harvard Forest Guest wireless<em> + Install R on your computer: <a href="http://lib.stat.cmu.edu/R/CRAN/" class="uri">http://lib.stat.cmu.edu/R/CRAN/</a></em> + Download the example project: <a href="https://github.com/HarvardForest/myProject/archive/master.zip" class="uri">https://github.com/HarvardForest/myProject/archive/master.zip</a></p>
-<p><strong>In Class</strong> + Introduction to analytics, the usefulness of programming and R + Present the overarching framework of analytics for a project (document organization, task scheduling, data management, analytics management, keeping an analytics notebook) + Basic functions/operations and tasks (e.g., do simple calculations on scalars and vectors) + Objects + Functions + Scripting and annotation</p>
-<p><strong>Challenge</strong></p>
-<p>June 4 (Thursday): Data management</p>
-<p><strong>In Class</strong> + Inputting and managing data overview + Data structure and spreadsheets + Data reading functions (read.table) + Manipulating vectors (sorting, ordering) + Manipulating matrices</p>
-<p><strong>Challenge</strong></p>
-<p>June 9 (Tuesday): Data analysis</p>
-<p><strong>In Class</strong> + Calculating basic statistics (mean and variance) + Scatterplots, Barplots and Histograms + Mean differences + Getting data from the HF archive</p>
-<p>June 16 (Tuesday): Programming + Advanced object classes (dataframes and lists) + Loops and applys + Data provenance + Versioning + Software ethics and hackathons?</p>
+<p><em>Pre-requisites</em>: experience with using basic computer software</p>
+<p><em>Required Materials</em>: laptop or access to some computing device</p>
+<p><em>No laptop?</em> You can borrow a Harvard Forest laptop (contact Manisha Patel)</p>
+<div id="class-schedule" class="section level2">
+<h2>Class Schedule</h2>
+<p><strong>June 1 (Monday)</strong></p>
+<p><strong>Location: Fisher Museum</strong></p>
+<p>7:45-8PM: brief intro to ecological analyses.</p>
+<ul>
+<li>Why program?</li>
+<li>Brief introduction to project management</li>
+<li>Connect to syllabus and course materials</li>
+</ul>
+<p><strong>June 2 (Tuesday)</strong></p>
+<p><strong>Location: Fisher Museum</strong></p>
+<p><em>Before Class</em></p>
+<ul>
+<li>Connect to Harvard Forest wireless</li>
+<li>Install R on your computer: <a href="http://lib.stat.cmu.edu/R/CRAN/" class="uri">http://lib.stat.cmu.edu/R/CRAN/</a>*</li>
+<li>Download the example project: <a href="https://github.com/HarvardForest/myProject/archive/master.zip" class="uri">https://github.com/HarvardForest/myProject/archive/master.zip</a></li>
+</ul>
+<p><em>9-10AM: Analytics and programming basics</em></p>
+<ul>
+<li>Analytics project framework <!-- (Noble 2009 =  --> <!--   document organization, task scheduling, data management, analytics --> <!--   management, keeping an analytics notebook) --></li>
+<li>Operations</li>
+<li>Objects</li>
+<li>Functions</li>
+<li>Scripting and annotation (Save Our Source!)</li>
+<li>Setting the working directory</li>
+</ul>
+<p><em>Post-Class Challenge</em></p>
+<ul>
+<li>What’s the area of a square with a side = 10 cm?</li>
+<li>What’s the circumference of a circle with diameter 10 cm?</li>
+</ul>
+<p><strong>June 4 (Thursday)</strong></p>
+<p><strong>Location: Seminar Room</strong></p>
+<p><em>9-10AM: Data, Data and more Data!</em> - Entering data by hand - Manipulating vectors (sorting, ordering) - Manipulating matrices (sorting, appending) - Inputting data (read.csv,read.table) - Advanced data = lists</p>
+<p><em>Post-Class Challenge</em></p>
+<ul>
+<li>How does a circle’s circumference change as it’s diameter changes?</li>
+<li>Find a cool equation and play with it in R (e.g. E=mc^2)!</li>
+</ul>
+<p><strong>June 9 (Tuesday)</strong></p>
+<p><strong>Location: Seminar Room</strong></p>
+<p><em>9-10AM: Analysis</em></p>
+<ul>
+<li>Overview of data visualization</li>
+<li>Calculating basic statistics (mean and variance)</li>
+<li>Writing your own functions (se: input, process, output)</li>
+<li>What are packages? (e.g., <em>gplot</em>)</li>
+<li>Barplot with error bars</li>
+</ul>
+<p><em>Post-Class Challenge</em></p>
+<ul>
+<li>Create a plot of how a circle’s circumference chances as its diameter changes.</li>
+</ul>
+<p><strong>June 16 (Tuesday)</strong></p>
+<p><strong>Location: Seminar Room</strong></p>
+<p><em>9-10AM: Best Practices and Some Advanced Topics</em></p>
+<ul>
+<li>Organizing code</li>
+<li>Getting data from the HF archives</li>
+<li>Loops and applys</li>
+<li>Versioning with github</li>
+<li>Simulating data (runif and rnorm)</li>
+<li>Data and software ethics</li>
+<li>Data provenance</li>
+<li>The Hackathon</li>
+</ul>
+<p><em>Post-Class Challenge</em></p>
+<ul>
+<li>Find and analyze an HF dataset</li>
+</ul>
 </div>
 <div id="readings-and-resources" class="section level2">
 <h2>Readings and Resources</h2>
 <ul>
-<li>R Cheat Sheet ++ <a href="http://cran.r-project.org/doc/contrib/Short-refcard.pdf" class="uri">http://cran.r-project.org/doc/contrib/Short-refcard.pdf</a></li>
-<li>Version Control ++ <a href="https://help.github.com/articles/good-resources-for-learning-git-and-github" class="uri">https://help.github.com/articles/good-resources-for-learning-git-and-github</a></li>
-<li>Code for America ++ <a href="https://www.codeforamerica.org" class="uri">https://www.codeforamerica.org</a></li>
+<li>R Cheat Sheet – <a href="http://cran.r-project.org/doc/contrib/Short-refcard.pdf" class="uri">http://cran.r-project.org/doc/contrib/Short-refcard.pdf</a></li>
+<li>Version Control – <a href="https://help.github.com/articles/good-resources-for-learning-git-and-github" class="uri">https://help.github.com/articles/good-resources-for-learning-git-and-github</a></li>
+<li><p>Code for America – <a href="https://www.codeforamerica.org" class="uri">https://www.codeforamerica.org</a></p></li>
+<li><p>Learning Statistics</p></li>
+<li><em>Primer of Ecological Statistics</em> by Ellison and Gotelli</li>
+<li><p><em>The Ecological Detective</em> by Hillborn and Mangel</p></li>
 </ul>
 </div>
 </div>
