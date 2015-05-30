@@ -1,0 +1,13 @@
+Day 1
+
+### Why program and why R?
+
+### Project file structure
+
+### Basic math
+
+### Objects
+
+### Functions
+
+### Challenge

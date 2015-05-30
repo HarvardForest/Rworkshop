@@ -9,9 +9,9 @@ Ecological Analytics
  ecological analyses and gain experience:
 
 - Managing analytical aspects of a project
-- Inputting, manipulating and exporting data
+- Inputing, manipulating and exporting data
 - Statistical functions
-- Plotting data patterns
+- Exploring data patterns
 - Coding and software best practices
 - Getting more help, experience and practice
 

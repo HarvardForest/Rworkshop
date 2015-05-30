@@ -5,7 +5,7 @@ Do you have project management training?
 How confident are you with your ability to conduct a research project?
 0-no confidence to 5-no problem
 
-How often do your use a spreadsheet?
+How often do you use a spreadsheet?
 0-never,1-yearly,2-monthly,3-daily
 
 How much statistical experience do you have?
