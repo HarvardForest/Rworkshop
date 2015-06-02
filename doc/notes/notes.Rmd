@@ -1,13 +1,85 @@
+Preview
+=======
++ Ecological analytics
++ Project management
++ Stats?
++ Why program?
++ Why R?
++ Install R
++ Use a calendar
++ Keep a notebook
++ Questions
++ Survey
+
 Day 1
 
-### Why program and why R?
+### you 3
 
-### Project file structure
+### Why program and why R? 2
 
-### Basic math
+### Project file structure 5
 
-### Objects
+### Script 1
+annotation
 
-### Functions
+### Basic math 5
+algebra
+relations
+
+not just a calculator!
+
+### Objects 5
+y = mx + b
+pi
+math with objects
+
+### Functions 5
+anatomy
+cognates
+
+### equals? 1
+
+= and ==
+<-
+
+### 1d data 5
+- vectors
+- c()
+- operations on vectors
+- indexing
+
+### Help 2
+built in
+Google
+neighbors
 
 ### Challenge
+1. Is R installed?
+2. setup file structure
+3. start a script
+4a. calculate the area if a circle
+4b. create a vector of numbers
+5. calculate the area of a.circle for vector
+6. calculate the mean
+7. mean function, look at help
+
+Day 2
++ 2d data
++ entering data
++ importing data
++ managing data
++ indexing
++ data classes
+
+Day 3
++ setting the working directory
++ relative paths
++ plotting
++ a couple of stats tests (anova/regression)
+
+
+Day 4
+
++ Loops
++ Writing functions
++ debugging tips
