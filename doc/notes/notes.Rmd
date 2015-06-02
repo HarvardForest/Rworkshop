@@ -64,19 +64,39 @@ neighbors
 7. mean function, look at help
 
 Day 2
-+ 2d data
-+ entering data
-+ importing data
-+ managing data
-+ indexing
++ 1d data and indexing
++ 2d data = cbind 
++ 2d indexing
++ sorting
 + data classes
-
-Day 3
++ importing data
 + setting the working directory
 + relative paths
-+ plotting
-+ a couple of stats tests (anova/regression)
 
+challenge
+1. create a vector
+2. sort
+3. order
+4. order sort
+5. compare
+
+1. create several vectors
+2. bind
+3. name columns
+
+1. import matrix
+2. head, str, summary
+3. isolate one column
+4. compare two columns
+5. sort and check
+
+Day 3
++ scientific method
++ importing data from HF
++ plotting
++ stats overview
++ a couple of stats tests (anova/regression)
++ plotting a line
 
 Day 4
 
