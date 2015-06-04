@@ -64,11 +64,22 @@ neighbors
 7. mean function, look at help
 
 Day 2
++ Amazing Grace Hopper  
++ debugging tips
+
++ scientific method
+
++ data overview 
 + 1d data and indexing
++ sorting
++ order
+
 + 2d data = cbind 
 + 2d indexing
 + sorting
 + data classes
++ data.frame
+
 + importing data
 + setting the working directory
 + relative paths
@@ -91,15 +102,34 @@ challenge
 5. sort and check
 
 Day 3
-+ scientific method
++ Ada Lovelace
+
++ Harvard Forest Archive
++ Brief comment in data, analysis and software ethics and transparency
+
 + importing data from HF
 + plotting
++ scatterplot
++ barplot
++ pairs
++ image
+
 + stats overview
++ population and sample
++ biological and statistical hypotheses
+
 + a couple of stats tests (anova/regression)
 + plotting a line
 
 Day 4
 
-+ Loops
+
++ algorithmic thinking
+
 + Writing functions
-+ debugging tips
+
++ Loops
++ Apply
+
++ version control (git, subversion, dropbox)
++ data provenance
