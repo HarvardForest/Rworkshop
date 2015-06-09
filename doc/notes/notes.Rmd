@@ -108,20 +108,10 @@ Annie J. Easley (https://twitter.com/NSF/status/578999472170012673/photo/1)
 5. re-organize columns
 6. create a new object as a sub-matrix
 
-10 min
-+ data classes
-+ setting the working directory and relative paths
-+ exporting (not saving) data
-
-1. set the working directory
-2. save the matrix to results
-
 + plotting
 + scatterplot (axis labels, point size, point shape)
 
 1. make a scatterplot of basal area ~ elevation
-
-
 
 Day 4
 
@@ -132,6 +122,14 @@ Day 4
 + simulate data (runif, rnorm)
 + regression
 + plotting a line
+
+10 min
++ data classes
++ setting the working directory and relative paths
++ exporting (not saving) data
+
+1. set the working directory
+2. save the matrix to results
 
 + Brief comment in data, analysis and software ethics and transparency
 
