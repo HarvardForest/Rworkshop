@@ -121,10 +121,15 @@ Annie J. Easley (https://twitter.com/NSF/status/578999472170012673/photo/1)
 
 1. make a scatterplot of basal area ~ elevation
 
+
+
+Day 4
+
 20 min
 + stats overview
 + population and sample
 + biological and statistical hypotheses
++ simulate data (runif, rnorm)
 + regression
 + plotting a line
 
@@ -134,8 +139,6 @@ Annie J. Easley (https://twitter.com/NSF/status/578999472170012673/photo/1)
    i. imports a dataset from HF (can be the dataset from today)
    ii. sorts a the whole dataset by a column
    iii. makes a plot of two columns 
-
-Day 4
 
 + Algorithmic thinking (using the tools you have)
    i. Define a task
