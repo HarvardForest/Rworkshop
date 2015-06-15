@@ -123,7 +123,9 @@ Day 4
 + regression
 + plotting a line
 
-10 min
+Run a regression analysis with latitude and basal area
+
+15 min
 + data classes
 + setting the working directory and relative paths
 + exporting (not saving) data
@@ -131,12 +133,15 @@ Day 4
 1. set the working directory
 2. save the matrix to results
 
-+ Brief comment in data, analysis and software ethics and transparency
-
 1. send me a script that does:
    i. imports a dataset from HF (can be the dataset from today)
    ii. sorts a the whole dataset by a column
    iii. makes a plot of two columns 
+
++ Writing functions
+   i. function name
+   ii. function arguments/parameters
+   iii. function tasks and output
 
 + Algorithmic thinking (using the tools you have)
    i. Define a task
@@ -145,13 +150,20 @@ Day 4
    iv. Debug
    v. Rinse and repeat
 
-+ Writing functions
-   i. function name
-   ii. function arguments/parameters
-   iii. function tasks and output
+Final Thoughts
 
-1. Write a function that calculates the area of a circle, given a radius
-2. Write a function that calculates the mean of a vector of numbers
++ getting more help ?????
++ version control (git, subversion, dropbox)
+5 minutes
++ data provenance
+
++ Brief comment in data, analysis and software ethics and transparency
++ Code for America (http://www.codeforamerica.org/geeks/)
++ Hackathons
+
+
+
+
 
 + the "for" loop
 
@@ -162,11 +174,3 @@ Day 4
 
 1. instead of a loop, use sapply
 2. make a matrix of values and apply your mean function
-
-Final Thoughts
-
-+ getting more help ?????
-+ version control (git, subversion, dropbox)
-+ data provenance
-+ Code for America (http://www.codeforamerica.org/geeks/)
-+ Hackathons
