@@ -7,9 +7,8 @@ Ecological Analytics with R
 
 *Instructors*: 
 
-Matthew Lau (http://people.fas.harvard.edu/~matthewklau)
-
-Luca Morreale (http://harvardforest.fas.harvard.edu/luca-morreale)
+- Matthew Lau (http://people.fas.harvard.edu/~matthewklau)
+- Luca Morreale (http://harvardforest.fas.harvard.edu/luca-morreale)
 
 *Goal*: Students will learn how to use the R programming language for
  ecological analyses and gain experience with:
@@ -126,7 +125,7 @@ project.
 - Think of an ecological question/challenge that might be addressed
   with software
 - Summer Hackathon?
-- Check out [Code for America](https://www.codeforamerica.org)
+- [Code for America](https://www.codeforamerica.org)
 
 Readings and Resources
 ----------------------
@@ -137,6 +136,7 @@ Readings and Resources
 - Code School
 -- http://tryr.codeschool.com
 - Version Control
+-- https://guides.github.com/activities/hello-world/ 
 -- https://help.github.com/articles/good-resources-for-learning-git-and-github
 - Code for America
 -- https://www.codeforamerica.org
