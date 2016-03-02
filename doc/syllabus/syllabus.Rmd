@@ -5,7 +5,11 @@ Ecological Analytics with R
 
 *Location*: Harvard Forest
 
-*Instructor*: Matthew Lau (http://people.fas.harvard.edu/~matthewklau)
+*Instructors*: 
+
+Matthew Lau (http://people.fas.harvard.edu/~matthewklau)
+
+Luca Morreale (http://harvardforest.fas.harvard.edu/luca-morreale)
 
 *Goal*: Students will learn how to use the R programming language for
  ecological analyses and gain experience with:
