@@ -66,8 +66,9 @@ Brief intro to ecological analyses.
 
 *Post-Class Challenge*
 
-- What's the area of a square with a side = 10 cm?
-- What's the circumference of a circle with diameter 10 cm?
+- Explore the HF data archive and find a dataset relevant to your
+project.
+- Make sure to read the data ownership information!
 
 **Second Meeting**
 
@@ -83,16 +84,13 @@ Brief intro to ecological analyses.
 
 *Post-Class Challenge*
 
-- How does a circle's circumference change as it's diameter changes?
-- Find a cool equation and play with it in R (e.g. E=mc^2)!
-
+- Write a function that will import your HF dataset into R.
 
 **Third Meeting**
 
 **Location: Fisher Museum**
 
 **Time: TBD**
-
 
 - Overview of data visualization
 - Calculating basic statistics (mean and variance)
@@ -102,8 +100,8 @@ Brief intro to ecological analyses.
 
 *Post-Class Challenge*
 
-- Create a plot of how a circle's circumference chances as its
-  diameter changes.
+- Write a script that will import your HF dataset and conduct analyses
+  on the data.
 
 **Fourth/Last Meeting**
 
@@ -116,13 +114,15 @@ Brief intro to ecological analyses.
 - Loops and applys
 - Versioning with github
 - Simulating data (runif and rnorm)
-- Data and software ethics
 - Data provenance
-- The Hackathon
+
 
 *Post-Class Challenge*
 
-- Find and analyze an HF dataset
+- Think of an ecological question/challenge that might be addressed
+  with software
+- Summer Hackathon?
+- Check out [Code for America](https://www.codeforamerica.org)
 
 Readings and Resources
 ----------------------
