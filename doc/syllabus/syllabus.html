@@ -63,15 +63,15 @@ img {
 
 <div id="ecological-analytics-with-r" class="section level1">
 <h1>Ecological Analytics with R</h1>
-<!-- render('syllabus.Rmd',);render('syllabus.Rmd',output_format='pdf_document') -->
+<!-- library(rmarkdown);render('syllabus.Rmd',);render('syllabus.Rmd',output_format='pdf_document') -->
 <p><em>Location</em>: Harvard Forest</p>
 <p><em>Instructor</em>: Matthew Lau (<a href="http://people.fas.harvard.edu/~matthewklau" class="uri">http://people.fas.harvard.edu/~matthewklau</a>)</p>
-<p><em>Goal</em>: Students will learn how to use the R programming language for ecological analyses and gain experience:</p>
+<p><em>Goal</em>: Students will learn how to use the R programming language for ecological analyses and gain experience with:</p>
 <ul>
 <li>Managing analytical aspects of a project</li>
-<li>Inputting, manipulating and exporting data</li>
+<li>Inputing, manipulating and exporting data</li>
 <li>Statistical functions</li>
-<li>Plotting data patterns</li>
+<li>Exploring data patterns</li>
 <li>Coding and software best practices</li>
 <li>Getting more help, experience and practice</li>
 </ul>
@@ -81,47 +81,53 @@ img {
 <p><em>No laptop?</em> You can borrow a Harvard Forest laptop (contact Manisha Patel)</p>
 <div id="class-schedule" class="section level2">
 <h2>Class Schedule</h2>
-<p><strong>June 1 (Monday)</strong></p>
+<p><strong>Pre-Class Meeting</strong></p>
 <p><strong>Location: Fisher Museum</strong></p>
-<p>7:45-8PM: brief intro to ecological analyses.</p>
+<p><strong>Time: TBD</strong></p>
+<p>Brief intro to ecological analyses.</p>
 <ul>
 <li>Why program?</li>
 <li>Brief introduction to project management</li>
 <li>Connect to syllabus and course materials</li>
 </ul>
-<p><strong>June 2 (Tuesday)</strong></p>
+<p><strong>First Meeting</strong></p>
 <p><strong>Location: Fisher Museum</strong></p>
+<p><strong>Time: TBD</strong></p>
 <p><em>Before Class</em></p>
 <ul>
 <li>Connect to Harvard Forest wireless</li>
 <li>Install R on your computer: <a href="http://lib.stat.cmu.edu/R/CRAN/" class="uri">http://lib.stat.cmu.edu/R/CRAN/</a>*</li>
-<li>Download the example project: <a href="https://github.com/HarvardForest/myProject/archive/master.zip" class="uri">https://github.com/HarvardForest/myProject/archive/master.zip</a></li>
-</ul>
-<p><em>9-10AM: Analytics and programming basics</em></p>
-<ul>
+<li><p>Download the example project: <a href="https://github.com/HarvardForest/myProject/archive/master.zip" class="uri">https://github.com/HarvardForest/myProject/archive/master.zip</a></p></li>
 <li>Analytics project framework <!-- (Noble 2009 =  --> <!--   document organization, task scheduling, data management, analytics --> <!--   management, keeping an analytics notebook) --></li>
 <li>Operations</li>
 <li>Objects</li>
 <li>Functions</li>
 <li>Scripting and annotation (Save Our Source!)</li>
-<li>Setting the working directory</li>
+<li><p>Setting the working directory</p></li>
 </ul>
 <p><em>Post-Class Challenge</em></p>
 <ul>
 <li>What’s the area of a square with a side = 10 cm?</li>
 <li>What’s the circumference of a circle with diameter 10 cm?</li>
 </ul>
-<p><strong>June 4 (Thursday)</strong></p>
-<p><strong>Location: Seminar Room</strong></p>
-<p><em>9-10AM: Data, Data and more Data!</em> - Entering data by hand - Manipulating vectors (sorting, ordering) - Manipulating matrices (sorting, appending) - Inputting data (read.csv,read.table) - Advanced data = lists</p>
+<p><strong>Second Meeting</strong></p>
+<p><strong>Location: Fisher Museum</strong></p>
+<p><strong>Time: TBD</strong></p>
+<ul>
+<li>Entering data by hand</li>
+<li>Manipulating vectors (sorting, ordering)</li>
+<li>Manipulating matrices (sorting, appending)</li>
+<li>Inputting data (read.csv,read.table)</li>
+<li>Advanced data = lists</li>
+</ul>
 <p><em>Post-Class Challenge</em></p>
 <ul>
 <li>How does a circle’s circumference change as it’s diameter changes?</li>
 <li>Find a cool equation and play with it in R (e.g. E=mc^2)!</li>
 </ul>
-<p><strong>June 9 (Tuesday)</strong></p>
-<p><strong>Location: Seminar Room</strong></p>
-<p><em>9-10AM: Analysis</em></p>
+<p><strong>Third Meeting</strong></p>
+<p><strong>Location: Fisher Museum</strong></p>
+<p><strong>Time: TBD</strong></p>
 <ul>
 <li>Overview of data visualization</li>
 <li>Calculating basic statistics (mean and variance)</li>
@@ -133,9 +139,9 @@ img {
 <ul>
 <li>Create a plot of how a circle’s circumference chances as its diameter changes.</li>
 </ul>
-<p><strong>June 16 (Tuesday)</strong></p>
-<p><strong>Location: Seminar Room</strong></p>
-<p><em>9-10AM: Best Practices and Some Advanced Topics</em></p>
+<p><strong>Fourth/Last Meeting</strong></p>
+<p><strong>Location: Fisher Museum</strong></p>
+<p><strong>Time: TBD</strong></p>
 <ul>
 <li>Organizing code</li>
 <li>Getting data from the HF archives</li>
@@ -155,9 +161,11 @@ img {
 <h2>Readings and Resources</h2>
 <ul>
 <li>R Cheat Sheet – <a href="http://cran.r-project.org/doc/contrib/Short-refcard.pdf" class="uri">http://cran.r-project.org/doc/contrib/Short-refcard.pdf</a></li>
+<li>Plots with ggplots – <a href="https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf" class="uri">https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf</a></li>
+<li>Code School – <a href="http://tryr.codeschool.com" class="uri">http://tryr.codeschool.com</a></li>
 <li>Version Control – <a href="https://help.github.com/articles/good-resources-for-learning-git-and-github" class="uri">https://help.github.com/articles/good-resources-for-learning-git-and-github</a></li>
 <li><p>Code for America – <a href="https://www.codeforamerica.org" class="uri">https://www.codeforamerica.org</a></p></li>
-<li><p>Learning Statistics</p></li>
+<li>Learning Statistics</li>
 <li><em>Primer of Ecological Statistics</em> by Ellison and Gotelli</li>
 <li><p><em>The Ecological Detective</em> by Hillborn and Mangel</p></li>
 </ul>

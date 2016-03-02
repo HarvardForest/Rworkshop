@@ -1,14 +1,14 @@
 Ecological Analytics with R
 ===========================
 
-<!-- render('syllabus.Rmd',);render('syllabus.Rmd',output_format='pdf_document') -->
+<!-- library(rmarkdown);render('syllabus.Rmd',);render('syllabus.Rmd',output_format='pdf_document') -->
 
 *Location*: Harvard Forest
 
 *Instructor*: Matthew Lau (http://people.fas.harvard.edu/~matthewklau)
 
 *Goal*: Students will learn how to use the R programming language for
- ecological analyses and gain experience:
+ ecological analyses and gain experience with:
 
 - Managing analytical aspects of a project
 - Inputing, manipulating and exporting data
@@ -30,27 +30,29 @@ briefly, this will not be a statistics class.**
 Class Schedule
 --------------
 
-**June 1 (Monday)**
+**Pre-Class Meeting**
 
 **Location: Fisher Museum**
 
-7:45-8PM: brief intro to ecological analyses.
+**Time: TBD**
+
+Brief intro to ecological analyses.
 
 - Why program? 
 - Brief introduction to project management
 - Connect to syllabus and course materials
 
-**June 2 (Tuesday)**
+**First Meeting**
 
 **Location: Fisher Museum**
+
+**Time: TBD**
 
 *Before Class*
 
 - Connect to Harvard Forest wireless
 - Install R on your computer: http://lib.stat.cmu.edu/R/CRAN/*
 - Download the example project: https://github.com/HarvardForest/myProject/archive/master.zip
-
-*9-10AM: Analytics and programming basics*
 
 - Analytics project framework 
 <!-- (Noble 2009 =  -->
@@ -67,11 +69,12 @@ Class Schedule
 - What's the area of a square with a side = 10 cm?
 - What's the circumference of a circle with diameter 10 cm?
 
-**June 4 (Thursday)**
+**Second Meeting**
 
-**Location: Seminar Room**
+**Location: Fisher Museum**
 
-*9-10AM: Data, Data and more Data!*
+**Time: TBD**
+
 - Entering data by hand
 - Manipulating vectors (sorting, ordering)
 - Manipulating matrices (sorting, appending)
@@ -83,11 +86,13 @@ Class Schedule
 - How does a circle's circumference change as it's diameter changes?
 - Find a cool equation and play with it in R (e.g. E=mc^2)!
 
-**June 9 (Tuesday)**
 
-**Location: Seminar Room**
+**Third Meeting**
 
-*9-10AM: Analysis*
+**Location: Fisher Museum**
+
+**Time: TBD**
+
 
 - Overview of data visualization
 - Calculating basic statistics (mean and variance)
@@ -100,11 +105,11 @@ Class Schedule
 - Create a plot of how a circle's circumference chances as its
   diameter changes.
 
-**June 16 (Tuesday)**
+**Fourth/Last Meeting**
 
-**Location: Seminar Room**
+**Location: Fisher Museum**
 
-*9-10AM: Best Practices and Some Advanced Topics*
+**Time: TBD**
 
 - Organizing code
 - Getting data from the HF archives
@@ -123,13 +128,15 @@ Readings and Resources
 ----------------------
 - R Cheat Sheet
 -- http://cran.r-project.org/doc/contrib/Short-refcard.pdf
+- Plots with ggplots
+-- https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf
+- Code School
+-- http://tryr.codeschool.com
 - Version Control
 -- https://help.github.com/articles/good-resources-for-learning-git-and-github
 - Code for America
 -- https://www.codeforamerica.org
 
 - Learning Statistics
-
 - *Primer of Ecological Statistics* by Ellison and Gotelli
 - *The Ecological Detective* by Hillborn and Mangel
-
