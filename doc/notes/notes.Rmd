@@ -1,176 +1,127 @@
-Preview
-=======
-+ Ecological analytics
-+ Project management
-+ Stats?
-+ Why program?
-+ Why R?
-+ Install R
-+ Use a calendar
-+ Keep a notebook
-+ Questions
-+ Survey
+---
+title: Notes: Ecological Research with R
+output: html_document
 
-Day 1
-
-### you 3
-
-### Why program and why R? 2
-
-### Project file structure 5
-
-### Script 1
-annotation
-
-### Basic math 5
-algebra
-relations
-
-not just a calculator!
-
-### Objects 5
-y = mx + b
-pi
-math with objects
-
-### Functions 5
-anatomy
-cognates
-
-### equals? 1
-
-= and ==
-<-
-
-### 1d data 5
-- vectors
-- c()
-- operations on vectors
-- indexing
-
-### Help 2
-built in
-Google
-neighbors
-
-### Challenge
-1. Is R installed?
-2. setup file structure
-3. start a script
-4a. calculate the area if a circle
-4b. create a vector of numbers
-5. calculate the area of a.circle for vector
-6. calculate the mean
-7. mean function, look at help
-
-Day 2
-+ Amazing Grace Hopper  
-+ debugging tips
-
-+ scientific method
-
-+ data overview 
-+ 1d data and indexing
-+ sorting
-+ order
-
-+ 2d data = cbind 
-+ 2d indexing
-
-challenge
-1. create a vector
-2. sort
-3. order
-4. order sort
-5. compare
-
-1. create several vectors
-2. bind
-3. name columns
+---
 
 
-Day 3
+<!-- library(rmarkdown);render('syllabus.Rmd',);render('syllabus.Rmd',output_format='pdf_document') -->
 
-Annie J. Easley (https://twitter.com/NSF/status/578999472170012673/photo/1)
+*Goal*: Students will learn how to use the R programming language for
+ ecological analyses and gain experience with:
 
-20 min
-+ Review: 2d indexing
-+ sorting
-+ importing data (read.csv)
-+ summary, str
-+ head, tail
-+ colnames
+- Managing analytical aspects of a project
+- Inputing, manipulating and exporting data
+- Statistical functions
+- Exploring data patterns
+- Coding and software best practices
+- Getting more help, experience and practice
 
-1. download data (http://harvardforest.fas.harvard.edu/data/p06/hf065/hf065-01-ants.csv)
-2. summarize data
-3. sort by site
-4. sort matrix based on site
-5. re-organize columns
-6. create a new object as a sub-matrix
+Class Schedule
+--------------
 
-+ plotting
-+ scatterplot (axis labels, point size, point shape)
+Brief intro to ecological analyses.
 
-1. make a scatterplot of basal area ~ elevation
+- Why program? 
+- Brief introduction to project management
+- Connect to syllabus and course materials
 
-Day 4
+**First Meeting**
 
-20 min
-+ stats overview
-+ population and sample
-+ biological and statistical hypotheses
-+ simulate data (runif, rnorm)
-+ regression
-+ plotting a line
+**Location: Fisher Museum**
 
-Run a regression analysis with latitude and basal area
+**Time: TBD**
 
-15 min
-+ data classes
-+ setting the working directory and relative paths
-+ exporting (not saving) data
+*Before Class*
 
-1. set the working directory
-2. save the matrix to results
+- Connect to Harvard Forest wireless
+- Install R on your computer: http://lib.stat.cmu.edu/R/CRAN/*
+- Download the example project: https://github.com/HarvardForest/myProject/archive/master.zip
 
-1. send me a script that does:
-   i. imports a dataset from HF (can be the dataset from today)
-   ii. sorts a the whole dataset by a column
-   iii. makes a plot of two columns 
+- Analytics project framework 
+<!-- (Noble 2009 =  -->
+<!--   document organization, task scheduling, data management, analytics -->
+<!--   management, keeping an analytics notebook) -->
+- Operations
+- Objects 
+- Functions
+- Scripting and annotation (Save Our Source!)
+- Setting the working directory
 
-+ Writing functions
-   i. function name
-   ii. function arguments/parameters
-   iii. function tasks and output
+*Post-Class Challenge*
 
-+ Algorithmic thinking (using the tools you have)
-   i. Define a task
-   ii. Write pseudo-code
-   iii. Write "eu"-code
-   iv. Debug
-   v. Rinse and repeat
+- Explore the HF data archive and find a dataset relevant to your
+project.
+- Make sure to read the data ownership information!
 
-Final Thoughts
+**Second Meeting**
 
-+ getting more help ?????
-+ version control (git, subversion, dropbox)
-5 minutes
-+ data provenance
+**Location: Fisher Museum**
 
-+ Brief comment in data, analysis and software ethics and transparency
-+ Code for America (http://www.codeforamerica.org/geeks/)
-+ Hackathons
+**Time: TBD**
+
+- Entering data by hand
+- Manipulating vectors (sorting, ordering)
+- Manipulating matrices (sorting, appending)
+- Inputting data (read.csv,read.table)
+- Advanced data = lists
+
+*Post-Class Challenge*
+
+- Write a function that will import your HF dataset into R.
+
+**Third Meeting**
+
+**Location: Fisher Museum**
+
+**Time: TBD**
+
+- Overview of data visualization
+- Calculating basic statistics (mean and variance)
+- Writing your own functions (se: input, process, output)
+- What are packages? (e.g., *gplot*)
+- Barplot with error bars
+
+*Post-Class Challenge*
+
+- Write a script that will import your HF dataset and conduct analyses
+  on the data.
+
+**Fourth/Last Meeting**
+
+**Location: Fisher Museum**
+
+**Time: TBD**
+
+- Organizing code
+- Getting data from the HF archives
+- Loops and applys
+- Versioning with github
+- Simulating data (runif and rnorm)
+- Data provenance
 
 
+*Post-Class Challenge*
 
+- Think of an ecological question/challenge that might be addressed
+  with software
+- Summer Hackathon?
+- [Code for America](https://www.codeforamerica.org)
 
+Readings and Resources
+----------------------
+- R Cheat Sheet
+-- http://cran.r-project.org/doc/contrib/Short-refcard.pdf
+- Plots with ggplots
+-- https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf
+- Code School
+-- http://tryr.codeschool.com
+- Version Control
+-- https://guides.github.com/activities/hello-world/ 
+-- https://help.github.com/articles/good-resources-for-learning-git-and-github
+- Code for America
+-- https://www.codeforamerica.org
 
-+ the "for" loop
-
-1. make a vector of random numbers using rnorm
-2. use your circle area function to calculate the area for each value
-
-+ Apply 
-
-1. instead of a loop, use sapply
-2. make a matrix of values and apply your mean function
+- Learning Statistics
+- *Primer of Ecological Statistics* by Ellison and Gotelli
+- *The Ecological Detective* by Hillborn and Mangel

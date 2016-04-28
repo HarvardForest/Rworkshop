@@ -39,7 +39,11 @@ Class Schedule
 
 **Time: TBD**
 
-- Go over 
+- What's my motiviation?
+- Data analysis is integral to ecology
+- Programming enables rapid, flexible analysis
+- Learning R is like learning a language, you already know so much
+- Examples: Data Processing, Plotting, Mapping, Modeling
 
 **First Meeting**
 
