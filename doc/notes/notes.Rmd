@@ -1,127 +1,58 @@
 ---
-title: Notes: Ecological Research with R
+title: Ecological Analysis with R (Harvard Forest)
 output: html_document
 
 ---
 
+# Day 1
 
-<!-- library(rmarkdown);render('syllabus.Rmd',);render('syllabus.Rmd',output_format='pdf_document') -->
+- [Why R?] 
+- [Getting setup] 
+- [R as a second language] 
+- [R Community = Packages + help?]
 
-*Goal*: Students will learn how to use the R programming language for
- ecological analyses and gain experience with:
+## [Why R?] 
 
-- Managing analytical aspects of a project
-- Inputing, manipulating and exporting data
-- Statistical functions
-- Exploring data patterns
-- Coding and software best practices
-- Getting more help, experience and practice
+## [Getting setup] 
 
-Class Schedule
---------------
+## [R as a second language] 
 
-Brief intro to ecological analyses.
+## [R Community = Packages + help?]
 
-- Why program? 
-- Brief introduction to project management
-- Connect to syllabus and course materials
+# Day 2 
 
-**First Meeting**
+- [Coding basics] 
+- [Analysis overview] 
+- [Data entry] 
+- [Data manipulation] 
+- [Data Visualization]
 
-**Location: Fisher Museum**
+## [Coding basics] 
 
-**Time: TBD**
+## [Analysis overview] 
 
-*Before Class*
+## [Data entry] 
 
-- Connect to Harvard Forest wireless
-- Install R on your computer: http://lib.stat.cmu.edu/R/CRAN/*
-- Download the example project: https://github.com/HarvardForest/myProject/archive/master.zip
+## [Data manipulation] 
 
-- Analytics project framework 
-<!-- (Noble 2009 =  -->
-<!--   document organization, task scheduling, data management, analytics -->
-<!--   management, keeping an analytics notebook) -->
-- Operations
-- Objects 
-- Functions
-- Scripting and annotation (Save Our Source!)
-- Setting the working directory
+## [Data Visualization]
 
-*Post-Class Challenge*
+# Day 3 
 
-- Explore the HF data archive and find a dataset relevant to your
-project.
-- Make sure to read the data ownership information!
+- [Stats and science] 
+- [Results: organization and reporting]
+- [Life-long lea**R**ning]
 
-**Second Meeting**
+## [Stats and science] 
 
-**Location: Fisher Museum**
+## [Results: organization and reporting]
 
-**Time: TBD**
-
-- Entering data by hand
-- Manipulating vectors (sorting, ordering)
-- Manipulating matrices (sorting, appending)
-- Inputting data (read.csv,read.table)
-- Advanced data = lists
-
-*Post-Class Challenge*
-
-- Write a function that will import your HF dataset into R.
-
-**Third Meeting**
-
-**Location: Fisher Museum**
-
-**Time: TBD**
-
-- Overview of data visualization
-- Calculating basic statistics (mean and variance)
-- Writing your own functions (se: input, process, output)
-- What are packages? (e.g., *gplot*)
-- Barplot with error bars
-
-*Post-Class Challenge*
-
-- Write a script that will import your HF dataset and conduct analyses
-  on the data.
-
-**Fourth/Last Meeting**
-
-**Location: Fisher Museum**
-
-**Time: TBD**
-
-- Organizing code
-- Getting data from the HF archives
-- Loops and applys
-- Versioning with github
-- Simulating data (runif and rnorm)
-- Data provenance
+## [Life-long lea**R**ning]
 
 
-*Post-Class Challenge*
+# 
 
-- Think of an ecological question/challenge that might be addressed
-  with software
-- Summer Hackathon?
-- [Code for America](https://www.codeforamerica.org)
+- TBD: Optional Hacker Session 1 and 2 (e.g. GIS and mapping, iterative
+  functions, accessing the Harvard Forest Archives, linear algebra,
+  making Shiny or Leaflet apps)
 
-Readings and Resources
-----------------------
-- R Cheat Sheet
--- http://cran.r-project.org/doc/contrib/Short-refcard.pdf
-- Plots with ggplots
--- https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf
-- Code School
--- http://tryr.codeschool.com
-- Version Control
--- https://guides.github.com/activities/hello-world/ 
--- https://help.github.com/articles/good-resources-for-learning-git-and-github
-- Code for America
--- https://www.codeforamerica.org
-
-- Learning Statistics
-- *Primer of Ecological Statistics* by Ellison and Gotelli
-- *The Ecological Detective* by Hillborn and Mangel
