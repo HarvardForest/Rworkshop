@@ -29,8 +29,8 @@
 
 Here are several great books and resources for learning statistics:
 
-- ![http://ms.mcmaster.ca/~bolker/emdbook/index.html](Ecological Models and Data in R) ![(pdf)](https://ms.mcmaster.ca/~bolker/emdbook/book.pdf)
-- ![A Primer of Ecological Statistics](http://www.sinauer.com/a-primer-of-ecological-statistics.html)
-- ![The Ecological Detective](http://press.princeton.edu/titles/5987.html)
+- [Ecological Models and Data in R](http://ms.mcmaster.ca/~bolker/emdbook/index.html) [(pdf)](https://ms.mcmaster.ca/~bolker/emdbook/book.pdf)
+- [A Primer of Ecological Statistics](http://www.sinauer.com/a-primer-of-ecological-statistics.html)
+- [The Ecological Detective](http://press.princeton.edu/titles/5987.html)
 
 
