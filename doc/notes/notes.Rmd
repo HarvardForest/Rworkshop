@@ -1,7 +1,6 @@
 ---
-title: Ecological Analysis with R (Harvard Forest *__R__*EU course)
+title: "Ecological Analysis with R (Harvard Forest *__R__*EU course)"
 output: html_document
-
 ---
 ***
 # Day 1
@@ -86,7 +85,7 @@ This can save you from having to reinvent the wheel each time you need to do som
 
 * Stack Overflow and various other online resources: There is already an abundance of information and tips about R online. [Stack Overflow](http://stackoverflow.com/) especially often has questions and answers that may help you figure out whats going on with your code.  As R continues to grow in popularity, there are more and more specialized sites devoted to various disciplines that use R.
 
-
+***
 # Day 2 
 
 - [Coding basics] 
@@ -97,9 +96,54 @@ This can save you from having to reinvent the wheel each time you need to do som
 
 ## [Coding basics] 
 
+##### Starting with simple math:
+```{r, results=TRUE}
+4 + 8
+
+10 / 2
+
+15 %% 4
+```
+
+##### What are objects?
+```{r, results = T}
+x <- 4
+y <- 6
+x + y
+z <- "Hello Harvard Forest"
+print(z)
+```
+
+##### What if we want to store more than one value at a time?
+```{r, results = T}
+v <- c(1,2,3,4,10) 
+sum(v)
+
+v2 <- c(10,15,20,30,40)
+v + v2
+
+```
+
 ## [Analysis overview] 
 
 ## [Data entry] 
+#### The first thing we need to do for most analyses is get our data into R so that we can do things with it. 
+One way to do this is to enter it by hand.  We can do this in a few ways:
+* Create multiple objects with our data:
+```{r, results= T}
+temperature <- c(70,80,50,53,60,45) # in Fahrenheit
+precipitation <- c(.01,1,0,2,.8,1.5) # in inches
+
+```
+
+* Maybe more useful is to create a dataframe:
+```{r, results = T}
+weather <- data.frame(date = c("3/18","3/19","4/10","4/11","4/18","5/10"),temperature = c(70,80,50,53,60,45), precipitation = c(.01,1,0,2,.8,1.5) )
+weather
+```
+#### From this point on we will be using the data we collected from you all.
+
+
 
 ## [Data manipulation] 
 
