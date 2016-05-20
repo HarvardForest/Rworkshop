@@ -3,12 +3,6 @@ title: "Ecological Analysis with R (Harvard Forest *__R__*EU course)"
 output: html_document
 ---
 ***
-# Day 1
-
-- [Why R?] 
-- [Getting setup] 
-- [R as a second language] 
-- [R Community = Packages + help?]
 
 ## [Why R?] 
 
@@ -31,6 +25,13 @@ text(x = 242, y = 4, "How long would this take in Excel?" , font = 2,cex = 1.2, 
 * R is open-source and free.
     + This aligns with our philosophy of open access, documented science.
     + Pragmatically: You and your collaborators will always have access to it regardless of funds and institutional affiliation.
+
+# Day 1
+
+- [Getting setup] 
+- [R as a second language] 
+- [R Community = Packages + help?]
+
     
 ## [Getting setup] 
 * Install the newest version of __R__ -  from [here](https://www.r-project.org/)
