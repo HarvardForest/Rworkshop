@@ -6,16 +6,29 @@ output: html_document
 
 ## [Why R?] 
 
-#### R is obviously not the only option when it comes to programming languages. Ditto for statistical tools. In fact, everything you can do in R you can probably do in any number of other programs/languages/webapps/etc.  So why do we teach R?
+## [Why R?] 
 
-* R is immediately useful. Once you know even a little bit it can save you time over programs like Excel and Google sheets.
-With only 2 lines of code we can create a dataset AND plot it. 
-With three we can add custom text.
+R is obviously not the only option when it comes to programming
+     languages. Ditto for statistical tools. In fact, everything you
+     can do in R you can probably do in any number of other
+     programs/languages/webapps/etc.  So why do we teach R?
+
+## [Why R?] 
+
+R is immediately useful. Once you know even a little bit it can save
+you time over programs like Excel and Google sheets.  With only 2
+lines of code we can create a dataset AND plot it.  With three we can
+add custom text.
+
 ```{r, eval=TRUE}
+
 fake_data <- rnorm(45,mean = 240, sd = 12)
 hist(fake_data, col = "lightblue")
 text(x = 242, y = 4, "How long would this take in Excel?" , font = 2,cex = 1.2,  col = "red")
+
 ```
+
+## 
 
 * R is growing in popularity - not just for statistics, it is being adopted for a variety of uses.
     + This means that learning even just the basics can help you in many paths, not just if you end up teaching REUs at Harvard Forest ;)
