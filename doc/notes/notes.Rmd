@@ -44,6 +44,12 @@ text(x = 242, y = 4, "How long would this take in Excel?" , font = 2,cex = 1.2, 
     + This aligns with our philosophy of open access, documented science.
     + Pragmatically: You and your collaborators will always have access to it regardless of funds and institutional affiliation.
 
+## 
+
+* http://shiny.rstudio.com/gallery/
+* https://ecoapps.shinyapps.io/lvpredatorprey/
+* http://dailynoise.blogspot.com/2012/10/fun-with-r-and-why-its-so-cool.html
+
 # Day 1
 
 - [Getting setup] 
