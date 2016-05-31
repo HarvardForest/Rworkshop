@@ -1,7 +1,9 @@
 ### Builds the course notes and presentation.
 ## 
 ## It can be run from the command line using
-## Rscript build.R
+## 
+## Rscript build.R notes.Rmd
+## 
 
 library(rmarkdown)
 ## Build notes html

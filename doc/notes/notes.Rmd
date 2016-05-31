@@ -1,17 +1,29 @@
 ---
 title: "Ecological Analysis with R (Harvard Forest *__R__*EU course)"
 output: html_document
+incremental: true
+
 ---
 ***
 
-## [Why R?] 
+# [Why R?] 
+
+<div class="notes">
+
+- Introduce yourselves (role at HF, experience with programming and
+analyses, fun fact)
+
+</div>
+
 
 ## [Why R?] 
 
 R is obviously not the only option when it comes to programming
      languages. Ditto for statistical tools. In fact, everything you
      can do in R you can probably do in any number of other
-     programs/languages/webapps/etc.  So why do we teach R?
+     programs/languages/webapps/etc. 
+
+So why do we teach R?
 
 ## [Why R?] 
 
@@ -19,6 +31,8 @@ R is immediately useful. Once you know even a little bit it can save
 you time over programs like Excel and Google sheets.  With only 2
 lines of code we can create a dataset AND plot it.  With three we can
 add custom text.
+
+## [Why R?] 
 
 ```{r, eval=TRUE}
 
@@ -28,34 +42,52 @@ text(x = 242, y = 4, "How long would this take in Excel?" , font = 2,cex = 1.2, 
 
 ```
 
-## 
+## [Why R?] 
 
-* R is growing in popularity - not just for statistics, it is being
+> - R is growing in popularity - not just for statistics, it is being
   adopted for a variety of uses.
-    + This means that learning even just the basics can help you in
-      many paths, not just if you end up teaching REUs at Harvard
-      Forest ;)
-    + Pragmatically: Knowing R is an extremely marketable skill in
+ > - This means that learning even just the basics can help you in many
+      paths, not just if you end up teaching REUs at Harvard Forest ;)
+ > - Pragmatically: Knowing R is an extremely marketable skill in
       research, finance, etc.
-    + This also means theres a growing community out there to help
-      you - more on this in a bit.
+ > - This also means theres a growing community out there to help you -
+      more on this in a bit.
 
-* R is open-source and free.
-    + This aligns with our philosophy of open access, documented science.
-    + Pragmatically: You and your collaborators will always have access to it regardless of funds and institutional affiliation.
+## [Why R?] 
+> - R is open-source and free.
+ > - This aligns with our philosophy of open access, documented science.
+ > - Pragmatically: You and your collaborators will always have access
+ to it regardless of funds and institutional affiliation.
 
-## 
+## [Why R?] 
 
-* http://shiny.rstudio.com/gallery/
-* https://ecoapps.shinyapps.io/lvpredatorprey/
-* http://dailynoise.blogspot.com/2012/10/fun-with-r-and-why-its-so-cool.html
+- https://ecoapps.shinyapps.io/lvpredatorprey/
+- http://shiny.rstudio.com/gallery/
+
+## [Why R?] 
+
+<div class="notes">
+
+- Bring laptops, preferably with RStudio already installed
+- Pen/paper for notes
+- We'll make notes available that morning
+- Thursday-Thursday-Friday
+- Mentors are discouraged from attending, we'll keep them up to date
+- Any questions?
+
+</div>
+
 
 # Day 1
 
 - [Getting setup] 
 - [R as a second language] 
 - [R Community = Packages + help?]
+- [Coding basics] 
 
+# 
+
+# 
     
 ## [Getting setup] 
 * Install the newest version of __R__ - from
@@ -80,7 +112,9 @@ text(x = 242, y = 4, "How long would this take in Excel?" , font = 2,cex = 1.2, 
 cognates of english words.  This is helpful when learning, as you
 often can figure out what a function does from its name alone. _Though
 be wary, just like in human languages there are sometimes false
-cognates!!_ ```{r, eval = FALSE} #Can you guess what the following
+cognates!!_ 
+
+```{r, eval = FALSE} #Can you guess what the following
 functions do:  mean(x) max(x) plot(x) Map(x) ```
 
 * Another benefit of learning R is that it can make learning other
@@ -140,11 +174,10 @@ to do something new!
 ***
 # Day 2 
 
-- [Coding basics] 
-- [Analysis overview] 
 - [Data entry] 
 - [Data manipulation] 
 - [Data Visualization]
+- [Analysis overview] 
 
 ## [Coding basics] 
 
