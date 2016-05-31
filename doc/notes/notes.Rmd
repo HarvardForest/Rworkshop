@@ -63,6 +63,19 @@ text(x = 242, y = 4, "How long would this take in Excel?" , font = 2,cex = 1.2, 
 
 - https://ecoapps.shinyapps.io/lvpredatorprey/
 - http://shiny.rstudio.com/gallery/
+- Leaflet
+```{r, echo = FALSE}
+library("leaflet")
+content <- paste(sep = "<br/>",
+                 "<b><a href='http://harvardforest.fas.harvard.edu'>Harvard Forest</a></b>",
+                  "REU R Introduction"
+)
+m <- leaflet() %>%
+  addTiles() %>%
+  addPopups(lat = 42.5315, lng = -72.1899,  content) 
+m  
+```
+
 
 ## 
 
