@@ -2,6 +2,7 @@
 title: "Ecological Analysis with R (Harvard Forest *__R__*EU course)"
 output: html_document
 incremental: true
+always_allow_html: yes
 
 ---
 ***
@@ -59,11 +60,8 @@ text(x = 242, y = 4, "How long would this take in Excel?" , font = 2,cex = 1.2, 
  > - Pragmatically: You and your collaborators will always have access
  to it regardless of funds and institutional affiliation.
 
-## 
+## Leaflet
 
-- https://ecoapps.shinyapps.io/lvpredatorprey/
-- http://shiny.rstudio.com/gallery/
-- Leaflet
 ```{r, echo = FALSE}
 library("leaflet")
 content <- paste(sep = "<br/>",
@@ -73,9 +71,13 @@ content <- paste(sep = "<br/>",
 m <- leaflet() %>%
   addTiles() %>%
   addPopups(lat = 42.5315, lng = -72.1899,  content) 
-m  
+m 
 ```
 
+## Shiny
+
+- https://ecoapps.shinyapps.io/lvpredatorprey/
+- http://shiny.rstudio.com/gallery/
 
 ## 
 

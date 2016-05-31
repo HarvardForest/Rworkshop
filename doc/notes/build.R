@@ -12,5 +12,5 @@ render(tail(commandArgs(trailingOnly=TRUE)),output_format='html_document')
 render(tail(commandArgs(trailingOnly=TRUE)),output_format='pdf_document')
 ## Build presentation html
 x <- tail(commandArgs(trailingOnly=TRUE))
-render(x,output_format='ioslides_presentation',output_file=paste('talk_',sub('.Rmd','',x,ignore.case=TRUE),'.html',sep=''))
+render(x,output_format='ioslides_presentation',output_file=paste(sub('.Rmd','',x,ignore.case=TRUE),'_talk.html',sep=''))
 
