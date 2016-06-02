@@ -10,11 +10,10 @@ always_allow_html: yes
 # Day 1
 
 - [Getting setup] 
+- [Coding basics] 
 - [R as a second language] 
 - [R Community = Packages + help?]
-- [Coding basics] 
-
-# 
+- [Plotting] 
 
 # 
     
@@ -72,7 +71,11 @@ Objects (aka. variables) are names that can "store" information, like
 data. 
 
 Functions are special types of objects that can do things, they all
-have the form of <tt>name</tt>(*arguments*). For example:
+have the form of <tt>**name**</tt>(*arguments*). For example:
+
+```{r, eval=FALSE}
+help('help')
+```
 
 ##Data types and Object classes
 
@@ -139,23 +142,6 @@ plot(x)
 Map(x) 
 ```
 
-## 
-
-<div class="notes">
-
-Another benefit of learning R is that it can make learning other
-computer languages much easier. Once you know some of the concepts
-of programming picking up another language (especially some of the
-more similar ones) can be pretty quick! 
-
-</div>
-
-
-
-```{r, eval=FALSE}
-help()
-```
-
 ## About arguments...
 
 - Most functions have default settings for most arguments
@@ -190,13 +176,11 @@ entire line to the right of it.
 Be sure to use style (i.e. formatting of your code) and annotation
 that will make your code usable later by others and yourself! 
 
-1. R script names should always end in .R
-2. Try and keep names simple, i.e. 3-5 characters, lowercase
-3. Put spaces around operators and after commas and before left
-parentheses except after function names
-4. Use <tt> <- </tt> for assignment, rather than <tt>=</tt>
-5. For more info on appropriate formatting, see
-   http://stat405.had.co.nz/r-style.html
+> 1. R script names should always end in .R
+> 2. Try and keep names simple, i.e. 3-5 characters, lowercase
+> 3. Put spaces around operators and after commas and before left parentheses except after function names
+> 4. Use <tt> <- </tt> for assignment, rather than <tt>=</tt>
+> 5. For more info on appropriate formatting, see http://stat405.had.co.nz/r-style.html
 
 ## Activity: write a script that will do some useful math!
 

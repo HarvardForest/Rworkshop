@@ -124,15 +124,13 @@ $(document).ready(function () {
 <h1>Day 1</h1>
 <ul>
 <li>[Getting setup]</li>
+<li>[Coding basics]</li>
 <li>[R as a second language]</li>
 <li>[R Community = Packages + help?]</li>
-<li>[Coding basics]</li>
+<li>[Plotting]</li>
 </ul>
 </div>
 <div id="section" class="section level1">
-<h1></h1>
-</div>
-<div id="section-1" class="section level1">
 <h1></h1>
 <div id="getting-setup" class="section level2">
 <h2>[Getting setup]</h2>
@@ -175,7 +173,8 @@ $(document).ready(function () {
 <h2>Operators, Objects and Functions</h2>
 <p>Operators are characters that do things like math, logical operations, equalities, etc.</p>
 <p>Objects (aka. variables) are names that can “store” information, like data.</p>
-<p>Functions are special types of objects that can do things, they all have the form of <tt>name</tt>(<em>arguments</em>). For example:</p>
+<p>Functions are special types of objects that can do things, they all have the form of <tt><strong>name</strong></tt>(<em>arguments</em>). For example:</p>
+<pre class="r"><code>help('help')</code></pre>
 </div>
 <div id="data-types-and-object-classes" class="section level2">
 <h2>Data types and Object classes</h2>
@@ -185,7 +184,7 @@ $(document).ready(function () {
 <div id="activity-what-can-we-do-with-objects" class="section level2">
 <h2>Activity: What can we do with objects?</h2>
 </div>
-<div id="section-2" class="section level2">
+<div id="section-1" class="section level2">
 <h2></h2>
 <pre class="r"><code>x &lt;- 4
 y &lt;- 6
@@ -195,14 +194,14 @@ x + y</code></pre>
 print(z)</code></pre>
 <pre><code>## [1] &quot;Hello Harvard Forest&quot;</code></pre>
 </div>
-<div id="section-3" class="section level2">
+<div id="section-2" class="section level2">
 <h2></h2>
 <p>We will go more in on object classes later in the workshop, but for now there is one important class you need to know and that is vectors. Vectors are objects that have multiple numbers (or strings, or logicals, etc) contained within. To create a vector do the following: <code>objectname &lt;- c(1,2,3,4,5)</code> . <code>c()</code> is a function that stands for concatenate.</p>
 </div>
 <div id="activity-what-if-we-want-to-store-more-than-one-value-at-a-time" class="section level2">
 <h2>Activity: What if we want to store more than one value at a time?</h2>
 </div>
-<div id="section-4" class="section level2">
+<div id="section-3" class="section level2">
 <h2></h2>
 <pre class="r"><code>v &lt;- c(1,2,3,4,10) 
 sum(v)</code></pre>
@@ -211,7 +210,7 @@ sum(v)</code></pre>
 v + v2</code></pre>
 <pre><code>## [1] 11 17 23 34 50</code></pre>
 </div>
-<div id="section-5" class="section level2">
+<div id="section-4" class="section level2">
 <h2></h2>
 </div>
 <div id="r-as-a-second-language" class="section level2">
@@ -230,13 +229,6 @@ max(x)
 plot(x) 
 Map(x) </code></pre>
 </div>
-<div id="section-6" class="section level2">
-<h2></h2>
-<div class="notes">
-<p>Another benefit of learning R is that it can make learning other computer languages much easier. Once you know some of the concepts of programming picking up another language (especially some of the more similar ones) can be pretty quick!</p>
-</div>
-<pre class="r"><code>help()</code></pre>
-</div>
 <div id="about-arguments" class="section level2">
 <h2>About arguments…</h2>
 <ul>
@@ -249,7 +241,7 @@ Map(x) </code></pre>
 <div id="activity-pick-a-function-and-explore-the-arguments" class="section level2">
 <h2>Activity: Pick a function and explore the arguments!</h2>
 </div>
-<div id="section-7" class="section level2">
+<div id="section-5" class="section level2">
 <h2></h2>
 <ol style="list-style-type: decimal">
 <li><tt>help()</tt> or <tt>?</tt></li>
@@ -265,6 +257,7 @@ Map(x) </code></pre>
 <div id="style-and-annotation" class="section level2">
 <h2>Style and Annotation</h2>
 <p>Be sure to use style (i.e. formatting of your code) and annotation that will make your code usable later by others and yourself!</p>
+<blockquote>
 <ol style="list-style-type: decimal">
 <li>R script names should always end in .R</li>
 <li>Try and keep names simple, i.e. 3-5 characters, lowercase</li>
@@ -272,11 +265,12 @@ Map(x) </code></pre>
 <li>Use <tt> &lt;- </tt> for assignment, rather than <tt>=</tt></li>
 <li>For more info on appropriate formatting, see <a href="http://stat405.had.co.nz/r-style.html" class="uri">http://stat405.had.co.nz/r-style.html</a></li>
 </ol>
+</blockquote>
 </div>
 <div id="activity-write-a-script-that-will-do-some-useful-math" class="section level2">
 <h2>Activity: write a script that will do some useful math!</h2>
 </div>
-<div id="section-8" class="section level2">
+<div id="section-6" class="section level2">
 <h2></h2>
 </div>
 <div id="r-community-packages-help" class="section level2">
@@ -285,29 +279,29 @@ Map(x) </code></pre>
 <li>As we mentioned before one of the great things about R is the community that comes with it. This is helpful in many ways, a few of which we’ll discuss a bit more in depth:</li>
 </ul>
 </div>
-<div id="section-9" class="section level2">
+<div id="section-7" class="section level2">
 <h2></h2>
 <p>Perhaps the most important resource out there to a new R user are packages. While base R comes with many handy functions you will quickly reach a point where you want to do something that the basic functions don’t cover.</p>
 <p>Packages to the rescue! Many people have already poured hours into creating new functions that do many, many different things. They bundle to these functions into ‘packages’ that are then made freely available.</p>
 </div>
-<div id="section-10" class="section level2">
+<div id="section-8" class="section level2">
 <h2></h2>
 <p>First we need to know the package name so we can install it:</p>
 <pre class="r"><code>install.packages(&quot;raster&quot;)</code></pre>
 </div>
-<div id="section-11" class="section level2">
+<div id="section-9" class="section level2">
 <h2></h2>
 <p>You only have to install a package once on your computer. Once it is installed we can then load it into any script in the future:</p>
 <pre class="r"><code>library(&quot;raster&quot;)</code></pre>
 </div>
-<div id="section-12" class="section level2">
+<div id="section-10" class="section level2">
 <h2></h2>
 <p>Once loaded, we can now use any of the functions from that package:</p>
 <pre class="r"><code>library(&quot;raster&quot;)
 r &lt;- raster(matrix(1:25,5,5))
 plot(r)</code></pre>
 </div>
-<div id="section-13" class="section level2">
+<div id="section-11" class="section level2">
 <h2></h2>
 <p>This can save you from having to reinvent the wheel each time you need to do something new!</p>
 <ul>

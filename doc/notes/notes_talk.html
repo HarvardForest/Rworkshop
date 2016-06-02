@@ -89,14 +89,13 @@
 
 <ul>
 <li>[Getting setup]</li>
+<li>[Coding basics]</li>
 <li>[R as a second language]</li>
 <li>[R Community = Packages + help?]</li>
-<li>[Coding basics]</li>
+<li>[Plotting]</li>
 </ul>
 
 </article></slide><slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2></h2></hgroup><article  id="section">
-
-</article></slide><slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2></h2></hgroup><article  id="section-1">
 
 </article></slide><slide class=''><hgroup><h2>[Getting setup]</h2></hgroup><article  id="getting-setup">
 
@@ -150,7 +149,9 @@
 
 <p>Objects (aka. variables) are names that can &quot;store&quot; information, like data.</p>
 
-<p>Functions are special types of objects that can do things, they all have the form of <tt>name</tt>(<em>arguments</em>). For example:</p>
+<p>Functions are special types of objects that can do things, they all have the form of <tt><strong>name</strong></tt>(<em>arguments</em>). For example:</p>
+
+<pre class = 'prettyprint lang-r'>help(&#39;help&#39;)</pre>
 
 </article></slide><slide class=''><hgroup><h2>Data types and Object classes</h2></hgroup><article  id="data-types-and-object-classes">
 
@@ -160,7 +161,7 @@
 
 </article></slide><slide class=''><hgroup><h2>Activity: What can we do with objects?</h2></hgroup><article  id="activity-what-can-we-do-with-objects">
 
-</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-2">
+</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-1">
 
 <pre class = 'prettyprint lang-r'>x &lt;- 4
 y &lt;- 6
@@ -173,13 +174,13 @@ print(z)</pre>
 
 <pre >## [1] &quot;Hello Harvard Forest&quot;</pre>
 
-</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-3">
+</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-2">
 
 <p>We will go more in on object classes later in the workshop, but for now there is one important class you need to know and that is vectors. Vectors are objects that have multiple numbers (or strings, or logicals, etc) contained within. To create a vector do the following: <code>objectname &lt;- c(1,2,3,4,5)</code> . <code>c()</code> is a function that stands for concatenate.</p>
 
 </article></slide><slide class=''><hgroup><h2>Activity: What if we want to store more than one value at a time?</h2></hgroup><article  id="activity-what-if-we-want-to-store-more-than-one-value-at-a-time">
 
-</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-4">
+</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-3">
 
 <pre class = 'prettyprint lang-r'>v &lt;- c(1,2,3,4,10) 
 sum(v)</pre>
@@ -191,7 +192,7 @@ v + v2</pre>
 
 <pre >## [1] 11 17 23 34 50</pre>
 
-</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-5">
+</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-4">
 
 </article></slide><slide class=''><hgroup><h2>[R as a second language]</h2></hgroup><article  id="r-as-a-second-language">
 
@@ -209,12 +210,6 @@ max(x)
 plot(x) 
 Map(x) </pre>
 
-</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-6">
-
-<aside class='note'><section><p>Another benefit of learning R is that it can make learning other computer languages much easier. Once you know some of the concepts of programming picking up another language (especially some of the more similar ones) can be pretty quick!</p></section></aside>
-
-<pre class = 'prettyprint lang-r'>help()</pre>
-
 </article></slide><slide class=''><hgroup><h2>About arguments&#8230;</h2></hgroup><article  id="about-arguments...">
 
 <ul>
@@ -226,7 +221,7 @@ Map(x) </pre>
 
 </article></slide><slide class=''><hgroup><h2>Activity: Pick a function and explore the arguments!</h2></hgroup><article  id="activity-pick-a-function-and-explore-the-arguments">
 
-</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-7">
+</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-5">
 
 <ol>
 <li><tt>help()</tt> or <tt>?</tt></li>
@@ -245,7 +240,7 @@ Map(x) </pre>
 
 <p>Be sure to use style (i.e. formatting of your code) and annotation that will make your code usable later by others and yourself!</p>
 
-<ol>
+<ol class = 'build'>
 <li>R script names should always end in .R</li>
 <li>Try and keep names simple, i.e. 3-5 characters, lowercase</li>
 <li>Put spaces around operators and after commas and before left parentheses except after function names</li>
@@ -255,7 +250,7 @@ Map(x) </pre>
 
 </article></slide><slide class=''><hgroup><h2>Activity: write a script that will do some useful math!</h2></hgroup><article  id="activity-write-a-script-that-will-do-some-useful-math">
 
-</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-8">
+</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-6">
 
 </article></slide><slide class=''><hgroup><h2>[R Community = Packages + help?]</h2></hgroup><article  id="r-community-packages-help">
 
@@ -263,25 +258,25 @@ Map(x) </pre>
 <li>As we mentioned before one of the great things about R is the community that comes with it. This is helpful in many ways, a few of which we&#39;ll discuss a bit more in depth:</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-9">
+</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-7">
 
 <p>Perhaps the most important resource out there to a new R user are packages. While base R comes with many handy functions you will quickly reach a point where you want to do something that the basic functions don&#39;t cover.</p>
 
 <p>Packages to the rescue! Many people have already poured hours into creating new functions that do many, many different things. They bundle to these functions into &#39;packages&#39; that are then made freely available.</p>
 
-</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-10">
+</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-8">
 
 <p>First we need to know the package name so we can install it:</p>
 
 <pre class = 'prettyprint lang-r'>install.packages(&quot;raster&quot;)</pre>
 
-</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-11">
+</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-9">
 
 <p>You only have to install a package once on your computer. Once it is installed we can then load it into any script in the future:</p>
 
 <pre class = 'prettyprint lang-r'>library(&quot;raster&quot;)</pre>
 
-</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-12">
+</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-10">
 
 <p>Once loaded, we can now use any of the functions from that package:</p>
 
@@ -289,7 +284,7 @@ Map(x) </pre>
 r &lt;- raster(matrix(1:25,5,5))
 plot(r)</pre>
 
-</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-13">
+</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-11">
 
 <p>This can save you from having to reinvent the wheel each time you need to do something new!</p>
 
