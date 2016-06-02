@@ -75,17 +75,18 @@ Functions are special types of objects that can do things, they all
 have the form of <tt>name</tt>(*arguments*). For example:
 
 ##Data types and Object classes
-There are multiple data types, but for now we just want you to be aware that are different types:
-characters vs. numbers vs. logical
 
-If you do not use "" (or ''), R will read whatever word/combination of characters you type as an object. Therefore R will read ``` ABCD ``` 
+There are multiple data types, but for now we just want you to be
+aware that are different types:  characters vs. numbers vs. logical
+
+If you do not use "" (or ''), R will read whatever word/combination of
+characters you type as an object. Therefore R will read ``` ABCD ```
 as an attempt to call an object that doesn't exist, but ``` "ABCD" ``` as a character string.  
 
-We will go more in  on object classes later in the workshop, but for now there is one important class you need to know and that is vectors.
-Vectors are objects that have multiple numbers (or strings, or logicals, etc) contained within.
-To create a vector do the following: ``` objectname <- c(1,2,3,4,5)``` . ```c()``` is a function that stands for concatenate.
+## Activity: What can we do with objects?
 
-#### What can we do with objects?
+## 
+
 ```{r, results = T}
 x <- 4
 y <- 6
@@ -94,7 +95,20 @@ z <- "Hello Harvard Forest"
 print(z)
 ```
 
-##### What if we want to store more than one value at a time?
+## 
+
+We will go more in on object classes later in the workshop, but for
+now there is one important class you need to know and that is vectors.
+Vectors are objects that have multiple numbers (or strings, or
+logicals, etc) contained within.  To create a vector do the following:
+``` objectname <- c(1,2,3,4,5)``` . ```c()``` is a function that
+stands for concatenate.
+
+
+## Activity: What if we want to store more than one value at a time?
+
+## 
+
 ```{r, results = T}
 v <- c(1,2,3,4,10) 
 sum(v)
@@ -108,12 +122,12 @@ v + v2
 ## [R as a second language] 
 
 - Learning R (or any computer language) is similar to learning a foreign language.
- - You have to learn more than just the words: you have to learn the
+- You have to learn more than just the words: you have to learn the
   grammar, punctuation and syntax of the language.
- - Just like in a foreign language, R has many commands that are
+- Just like in a foreign language, R has many commands that are
  cognates of English words.  This is helpful when learning, as you
  often can figure out what a function does from its name alone.
- - Though be wary, just like in human languages there are
+- Though be wary, just like in human languages there are
  sometimes false cognates.
 
 ## Can you guess what the following functions do?
@@ -154,8 +168,14 @@ help()
 - Use <tt>tab</tt> to try and complete the names of functions and
   arguments
 
+## Activity: Pick a function and explore the arguments!
 
-## Script
+## 
+
+1. <tt>help()</tt> or <tt>?</tt>
+2. Use tab completion
+
+## Scripting
 
 A script is a file that you can store your code for later use!
 
@@ -163,7 +183,6 @@ So, open up a new script file and save it to your Rwksp/src directory.
 
 Commenting can be done using <tt>#</tt> because R will ignore the
 entire line to the right of it. 
-
 
 
 ## Style and Annotation
@@ -178,6 +197,10 @@ parentheses except after function names
 4. Use <tt> <- </tt> for assignment, rather than <tt>=</tt>
 5. For more info on appropriate formatting, see
    http://stat405.had.co.nz/r-style.html
+
+## Activity: write a script that will do some useful math!
+
+## 
 
 ## [R Community = Packages + help?]
 
@@ -245,178 +268,189 @@ to do something new!
   use R.
 
 ##Activity: play around with plots!
-With a set of data, figure out a way to visualize the mean of that data. This will challenge you to use the resources and tools that you've learned today, and is also very similar to the way you'll have to use R in the future. You have an end goal in mind, but you need to do some searching and experimentation to figure out how best to achieve it!
+
+With a set of data, figure out a way to visualize the mean of that
+data. This will challenge you to use the resources and tools that
+you've learned today, and is also very similar to the way you'll have
+to use R in the future. You have an end goal in mind, but you need to
+do some searching and experimentation to figure out how best to
+achieve it!
+
+## Up next...
+
+- Data entry
+- Data manipulation/management
+- Data visualization
+
+<!-- *** -->
+<!-- # Day 2  -->
+
+<!-- - [Data entry]  -->
+<!-- - [Data manipulation]  -->
+<!-- - [Data Visualization] -->
+<!-- - [Analysis overview]  -->
+
+<!-- ## [Coding basics]  -->
+
+<!-- ##### Starting with simple math: -->
+<!-- ```{r, results=TRUE} -->
+<!-- 4 + 8 -->
+
+<!-- 10 / 2 -->
+
+<!-- 15 %% 4 -->
+<!-- ``` -->
 
 
-***
-# Day 2 
+<!-- ## [Analysis overview]  -->
 
-- [Data entry] 
-- [Data manipulation] 
-- [Data Visualization]
-- [Analysis overview] 
+<!-- ## [Data entry]  -->
+<!-- #### The first thing we need to do for most analyses is get our data into R so that we can do things with it.  -->
+<!-- One way to do this is to enter it by hand.  We can do this in a few ways: -->
+<!-- * Create multiple objects with our data: -->
+<!-- ```{r, results= T} -->
+<!-- temperature <- c(70,80,50,53,60,45) # in Fahrenheit -->
+<!-- precipitation <- c(.01,1,0,2,.8,1.5) # in inches -->
 
-## [Coding basics] 
+<!-- ``` -->
 
-##### Starting with simple math:
-```{r, results=TRUE}
-4 + 8
-
-10 / 2
-
-15 %% 4
-```
-
-
-## [Analysis overview] 
-
-## [Data entry] 
-#### The first thing we need to do for most analyses is get our data into R so that we can do things with it. 
-One way to do this is to enter it by hand.  We can do this in a few ways:
-* Create multiple objects with our data:
-```{r, results= T}
-temperature <- c(70,80,50,53,60,45) # in Fahrenheit
-precipitation <- c(.01,1,0,2,.8,1.5) # in inches
-
-```
-
-* Maybe more useful is to create a dataframe:
-```{r, results = T}
-weather <- data.frame(date = c("3/18","3/19","4/10","4/11","4/18","5/10"),temperature = c(70,80,50,53,60,45), precipitation = c(.01,1,0,2,.8,1.5) )
-weather
-```
-#### From this point on we will be using the data we collected from you all.
-
-
-
-## [Data manipulation] 
-
-* Vectors - indexing
-* Matrices - rows and column
-* Data Frames - mixing data types
-* Lists - applys
-
-![list example](img/CO2_qPVWsAAErbv.png)
-
-## [Data Visualization]
-
-# Day 3 
-
-- [Stats and science] 
-- [Results: organization and reporting]
-- [Life-long lea**R**ning]
-
-## [Stats and science] 
-
-## [Results: organization and reporting]
-
-## [Life-long lea**R**ning]
-
-
-# 
-
-- TBD: Optional Hacker Session 1 and 2 (e.g. GIS and mapping, iterative
-  functions, accessing the Harvard Forest Archives, linear algebra,
-  making Shiny or Leaflet apps)
+<!-- * Maybe more useful is to create a dataframe: -->
+<!-- ```{r, results = T} -->
+<!-- weather <- data.frame(date = c("3/18","3/19","4/10","4/11","4/18","5/10"),temperature = c(70,80,50,53,60,45), precipitation = c(.01,1,0,2,.8,1.5) ) -->
+<!-- weather -->
+<!-- ``` -->
+<!-- #### From this point on we will be using the data we collected from you all. -->
 
 
 
-# [Why R?] 
+<!-- ## [Data manipulation]  -->
 
-<div class="notes">
+<!-- * Vectors - indexing -->
+<!-- * Matrices - rows and column -->
+<!-- * Data Frames - mixing data types -->
+<!-- * Lists - applys -->
 
-- Introduce yourselves (role at HF, experience with programming and
-analyses, fun fact)
+<!-- ![list example](img/CO2_qPVWsAAErbv.png) -->
 
-</div>
+<!-- ## [Data Visualization] -->
+
+<!-- # Day 3  -->
+
+<!-- - [Stats and science]  -->
+<!-- - [Results: organization and reporting] -->
+<!-- - [Life-long lea**R**ning] -->
+
+<!-- ## [Stats and science]  -->
+
+<!-- ## [Results: organization and reporting] -->
+
+<!-- ## [Life-long lea**R**ning] -->
 
 
-## 
+<!-- #  -->
 
-R is obviously not the only option when it comes to programming
-     languages. Ditto for statistical tools. In fact, everything you
-     can do in R you can probably do in any number of other
-     programs/languages/webapps/etc. 
+<!-- - TBD: Optional Hacker Session 1 and 2 (e.g. GIS and mapping, iterative -->
+<!--   functions, accessing the Harvard Forest Archives, linear algebra, -->
+<!--   making Shiny or Leaflet apps) -->
 
-So why do we teach R?
 
-## 
 
-R is immediately useful. Once you know even a little bit it can save
-you time over programs like Excel and Google sheets.  With only 2
-lines of code we can create a dataset AND plot it.  With three we can
-add custom text.
+<!-- # [Why R?]  -->
 
-## 
+<!-- <div class="notes"> -->
 
-```{r, eval=TRUE}
+<!-- - Introduce yourselves (role at HF, experience with programming and -->
+<!-- analyses, fun fact) -->
 
-fake_data <- rnorm(45,mean = 240, sd = 12)
-hist(fake_data, col = "lightblue")
-text(x = 242, y = 4, "How long would this take in Excel?" , font = 2,cex = 1.2,  col = "red")
+<!-- </div> -->
 
-```
 
-## 
+<!-- ##  -->
 
-> - R is growing in popularity - not just for statistics, it is being
-  adopted for a variety of uses.
- > - This means that learning even just the basics can help you in many
-      paths, not just if you end up teaching REUs at Harvard Forest ;)
- > - Pragmatically: Knowing R is an extremely marketable skill in
-      research, finance, etc.
- > - This also means there's a growing community out there to help you -
-      more on this in a bit.
+<!-- R is obviously not the only option when it comes to programming -->
+<!--      languages. Ditto for statistical tools. In fact, everything you -->
+<!--      can do in R you can probably do in any number of other -->
+<!--      programs/languages/webapps/etc.  -->
 
-## 
-> - R is open-source and free.
- > - This aligns with our philosophy of open access, documented science.
- > - Pragmatically: You and your collaborators will always have access
- to it regardless of funds and institutional affiliation.
+<!-- So why do we teach R? -->
 
-## Leaflet
+<!-- ##  -->
 
-```{r, echo = TRUE, eval = FALSE}
-library("leaflet")
-content <- paste(sep = "<br/>",
-                 "<b><a href='http://harvardforest.fas.harvard.edu'>Harvard Forest</a></b>",
-                  "REU R Introduction"
-)
-m <- leaflet() %>%
-  addTiles() %>%
-  addPopups(lat = 42.5315, lng = -72.1899,  content) 
-m 
-```
+<!-- R is immediately useful. Once you know even a little bit it can save -->
+<!-- you time over programs like Excel and Google sheets.  With only 2 -->
+<!-- lines of code we can create a dataset AND plot it.  With three we can -->
+<!-- add custom text. -->
 
-## 
+<!-- ##  -->
 
-```{r, echo = FALSE}
-library("leaflet")
-content <- paste(sep = "<br/>",
-                 "<b><a href='http://harvardforest.fas.harvard.edu'>Harvard Forest</a></b>",
-                  "REU R Introduction"
-)
-m <- leaflet() %>%
-  addTiles() %>%
-  addPopups(lat = 42.5315, lng = -72.1899,  content) 
-m 
-```
+<!-- ```{r, eval=TRUE} -->
 
-## Shiny
+<!-- fake_data <- rnorm(45,mean = 240, sd = 12) -->
+<!-- hist(fake_data, col = "lightblue") -->
+<!-- text(x = 242, y = 4, "How long would this take in Excel?" , font = 2,cex = 1.2,  col = "red") -->
 
-- https://ecoapps.shinyapps.io/lvpredatorprey/
-- http://shiny.rstudio.com/gallery/
+<!-- ``` -->
 
-## 
+<!-- ##  -->
 
-<div class="notes">
+<!-- > - R is growing in popularity - not just for statistics, it is being -->
+<!--   adopted for a variety of uses. -->
+<!--  > - This means that learning even just the basics can help you in many -->
+<!--       paths, not just if you end up teaching REUs at Harvard Forest ;) -->
+<!--  > - Pragmatically: Knowing R is an extremely marketable skill in -->
+<!--       research, finance, etc. -->
+<!--  > - This also means there's a growing community out there to help you - -->
+<!--       more on this in a bit. -->
 
-- Bring laptops, preferably with RStudio already installed
-- Pen/paper for notes
-- We'll make notes available that morning
-- Thursday-Thursday-Friday
-- Mentors are discouraged from attending, we'll keep them up to date
-- Any questions?
-- Questionnaire
+<!-- ##  -->
+<!-- > - R is open-source and free. -->
+<!--  > - This aligns with our philosophy of open access, documented science. -->
+<!--  > - Pragmatically: You and your collaborators will always have access -->
+<!--  to it regardless of funds and institutional affiliation. -->
 
-</div>
+<!-- ## Leaflet -->
+
+<!-- ```{r, echo = TRUE, eval = FALSE} -->
+<!-- library("leaflet") -->
+<!-- content <- paste(sep = "<br/>", -->
+<!--                  "<b><a href='http://harvardforest.fas.harvard.edu'>Harvard Forest</a></b>", -->
+<!--                   "REU R Introduction" -->
+<!-- ) -->
+<!-- m <- leaflet() %>% -->
+<!--   addTiles() %>% -->
+<!--   addPopups(lat = 42.5315, lng = -72.1899,  content)  -->
+<!-- m  -->
+<!-- ``` -->
+
+<!-- ##  -->
+
+<!-- ```{r, echo = FALSE} -->
+<!-- library("leaflet") -->
+<!-- content <- paste(sep = "<br/>", -->
+<!--                  "<b><a href='http://harvardforest.fas.harvard.edu'>Harvard Forest</a></b>", -->
+<!--                   "REU R Introduction" -->
+<!-- ) -->
+<!-- m <- leaflet() %>% -->
+<!--   addTiles() %>% -->
+<!--   addPopups(lat = 42.5315, lng = -72.1899,  content)  -->
+<!-- m  -->
+<!-- ``` -->
+
+<!-- ## Shiny -->
+
+<!-- - https://ecoapps.shinyapps.io/lvpredatorprey/ -->
+<!-- - http://shiny.rstudio.com/gallery/ -->
+
+<!-- ##  -->
+
+<!-- <div class="notes"> -->
+
+<!-- - Bring laptops, preferably with RStudio already installed -->
+<!-- - Pen/paper for notes -->
+<!-- - We'll make notes available that morning -->
+<!-- - Thursday-Thursday-Friday -->
+<!-- - Mentors are discouraged from attending, we'll keep them up to date -->
+<!-- - Any questions? -->
+<!-- - Questionnaire -->
+
+<!-- </div> -->
