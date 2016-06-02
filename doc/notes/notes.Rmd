@@ -37,6 +37,74 @@ always_allow_html: yes
 - I also suggest creating a README file for you to put some general
   notes about the workshop
 
+## Say hello to the Console...
+
+The Console is a command line where you can enter text, as if you are "talking"
+to the computer.
+
+```{r}
+
+
+```
+
+## Activity: Try out some math
+
+```{r}
+
+
+```
+
+
+```{r}
+2+2
+2-2
+2*2
+2/2
+2%*%2
+```
+
+## Operators, Objects and Functions
+
+Operators are characters that do things like math, logical operations,
+equalities, etc.
+
+Objects (aka. variables) are names that can "store" information, like
+data. 
+
+Functions are special types of objects that can do things, they all
+have the form of <tt>name</tt>(*arguments*). For example:
+
+##Data types and Object classes
+There are multiple data types, but for now we just want you to be aware that are different types:
+characters vs. numbers vs. logical
+
+If you do not use "" (or ''), R will read whatever word/combination of characters you type as an object. Therefore R will read ``` ABCD ``` 
+as an attempt to call an object that doesn't exist, but ``` "ABCD" ``` as a character string.  
+
+We will go more in  on object classes later in the workshop, but for now there is one important class you need to know and that is vectors.
+Vectors are objects that have multiple numbers (or strings, or logicals, etc) contained within.
+To create a vector do the following: ``` objectname <- c(1,2,3,4,5)``` . ```c()``` is a function that stands for concatenate.
+
+#### What can we do with objects?
+```{r, results = T}
+x <- 4
+y <- 6
+x + y
+z <- "Hello Harvard Forest"
+print(z)
+```
+
+##### What if we want to store more than one value at a time?
+```{r, results = T}
+v <- c(1,2,3,4,10) 
+sum(v)
+
+v2 <- c(10,15,20,30,40)
+v + v2
+
+```
+
+## 
 ## [R as a second language] 
 
 - Learning R (or any computer language) is similar to learning a foreign language.
@@ -68,45 +136,7 @@ more similar ones) can be pretty quick!
 
 </div>
 
-## Say hello to the Command Line...
 
-The command line is where you can enter text, as if you are "talking"
-to the computer.
-
-```{r}
-
-
-```
-
-## Try out some math
-
-```{r}
-
-
-```
-
-## 
-
-```{r}
-2+2
-2-2
-2*2
-2/2
-2%*%2
-```
-
-## Operators, Objects and Functions
-
-Operators are characters that do things like math, logical operations,
-equalities, etc.
-
-Objects (aka. variables) are names that can "store" information, like
-data. 
-
-Functions are special types of objects that can do things, they all
-have the form of <tt>name</tt>(*arguments*). For example:
-
-## 
 
 ```{r, eval=FALSE}
 help()
@@ -145,7 +175,7 @@ that will make your code usable later by others and yourself!
 2. Try and keep names simple, i.e. 3-5 characters, lowercase
 3. Put spaces around operators and after commas and before left
 parentheses except after function names
-4. Use <tt><-</tt> for assignment, rather than <tt>=</tt>
+4. Use <tt> <- </tt> for assignment, rather than <tt>=</tt>
 5. For more info on appropriate formatting, see
    http://stat405.had.co.nz/r-style.html
 
@@ -214,6 +244,9 @@ to do something new!
   more and more specialized sites devoted to various disciplines that
   use R.
 
+##Activity: play around with plots!
+With a set of data, figure out a way to visualize the mean of that data. This will challenge you to use the resources and tools that you've learned today, and is also very similar to the way you'll have to use R in the future. You have an end goal in mind, but you need to do some searching and experimentation to figure out how best to achieve it!
+
 
 ***
 # Day 2 
@@ -234,24 +267,6 @@ to do something new!
 15 %% 4
 ```
 
-##### What are objects?
-```{r, results = T}
-x <- 4
-y <- 6
-x + y
-z <- "Hello Harvard Forest"
-print(z)
-```
-
-##### What if we want to store more than one value at a time?
-```{r, results = T}
-v <- c(1,2,3,4,10) 
-sum(v)
-
-v2 <- c(10,15,20,30,40)
-v + v2
-
-```
 
 ## [Analysis overview] 
 
