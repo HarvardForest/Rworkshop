@@ -282,7 +282,21 @@ that will make your code usable later by others and yourself!
 <!-- - Data visualization -->
 
 
+<!-- - [Data entry]  -->
+<!-- - [Data manipulation]  -->
+<!-- - [Data Visualization] -->
 <!-- - [Analysis overview]  -->
+
+<!-- ## [Coding basics]  -->
+
+<!-- ##### Starting with simple math: -->
+<!-- ```{r, results=TRUE} -->
+<!-- 4 + 8 -->
+
+<!-- 10 / 2 -->
+
+<!-- 15 %% 4 -->
+<!-- ``` -->
 
 
 <!-- ## [Analysis overview]  -->
@@ -316,7 +330,6 @@ that will make your code usable later by others and yourself!
 <!-- ![list example](img/CO2_qPVWsAAErbv.png) -->
 
 <!-- ## [Data Visualization] -->
-
 
 <!-- # Day 3  -->
 
