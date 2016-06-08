@@ -12,5 +12,3 @@
 vignettes/*.html
 vignettes/*.pdf
 
-# data files
-data/*
