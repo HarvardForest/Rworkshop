@@ -5,186 +5,182 @@ incremental: true
 always_allow_html: yes
 
 ---
-<!-- *** -->
+***
 
-<!-- Lau: add tiny url -->
+# Day 1
 
-<!-- Data =  -->
+- [Getting setup]
+- [Coding basics]
+- [R as a second language]
+- [R Community = Packages + help?]
+- [Plotting]
 
-<!-- # Day 1 -->
+#
 
-<!-- - [Getting setup]  -->
-<!-- - [Coding basics]  -->
-<!-- - [R as a second language]  -->
-<!-- - [R Community = Packages + help?] -->
-<!-- - [Plotting]  -->
+## [Getting setup]
+- Install the newest version of __RStudio__ from [here](https://www.rstudio.com/products/rstudio/#Desktop)
+ - You do not need RStudio to run R. We do suggest it however for the
+      improvements it offers over the default R GUI (a more seamless
+      integration of scripts, console and graphs) along with some
+      other additional features.
+ - While RStudio offers some point-and-click GUI alternatives, we will
+   not be using or teaching them in this class.
 
-<!-- #  -->
+## Set up your project space
 
-<!-- ## [Getting setup]  -->
-<!-- - Install the newest version of __RStudio__ from [here](https://www.rstudio.com/products/rstudio/#Desktop) -->
-<!--  - You do not need RStudio to run R. We do suggest it however for the -->
-<!--       improvements it offers over the default R GUI (a more seamless -->
-<!--       integration of scripts, console and graphs) along with some -->
-<!--       other additional features. -->
-<!--  - While RStudio offers some point-and-click GUI alternatives, we will -->
-<!--    not be using or teaching them in this class. -->
+- Create a directory on your Desktop called Rwksp
+- Create the following folders:
+ - data (This is self explanatory)
+ - src (This is where your code lives)
+ - docs (This is where other files that aren't code or data should live)
+- I also suggest creating a README file for you to put some general
+  notes about the workshop
 
-<!-- ## Set up your project space -->
+## Say hello to the Console...
 
-<!-- - Create a directory on your Desktop called Rwksp -->
-<!-- - Create the following folders: -->
-<!--  - data (This is self explanatory) -->
-<!--  - src (This is where your code lives) -->
-<!--  - docs (This is where other files that aren't code or data should live) -->
-<!-- - I also suggest creating a README file for you to put some general -->
-<!--   notes about the workshop -->
+The Console is a command line where you can enter text, as if you are "talking"
+to the computer.
 
-<!-- ## Say hello to the Console... -->
-
-<!-- The Console is a command line where you can enter text, as if you are "talking" -->
-<!-- to the computer. -->
-
-<!-- ```{r} -->
+```{r}
 
 
-<!-- ``` -->
+```
 
-<!-- ## Activity: Try out some math -->
+## Activity: Try out some math
 
-<!-- ```{r} -->
-
-
-<!-- ``` -->
+```{r}
 
 
-<!-- ```{r} -->
-<!-- 2+2 -->
-<!-- 2-2 -->
-<!-- 2*2 -->
-<!-- 2/2 -->
-<!-- 2%*%2 -->
-<!-- ``` -->
-
-<!-- ## Operators, Objects and Functions -->
-
-<!-- Operators are characters that do things like math, logical operations, -->
-<!-- equalities, etc. -->
-
-<!-- Objects (aka. variables) are names that can "store" information, like -->
-<!-- data.  -->
-
-<!-- Functions are special types of objects that can do things, they all -->
-<!-- have the form of <tt>**name**</tt>(*arguments*). For example: -->
-
-<!-- ```{r, eval=FALSE} -->
-<!-- help('help') -->
-<!-- ``` -->
-
-<!-- ##Data types and Object classes -->
-
-<!-- There are multiple data types, but for now we just want you to be -->
-<!-- aware that are different types:  characters vs. numbers vs. logical -->
-
-<!-- If you do not use "" (or ''), R will read whatever word/combination of -->
-<!-- characters you type as an object. Therefore R will read ``` ABCD ``` -->
-<!-- as an attempt to call an object that doesn't exist, but ``` "ABCD" ``` as a character string.   -->
-
-<!-- ## Activity: What can we do with objects? -->
-
-<!-- ##  -->
-
-<!-- ```{r, results = T} -->
-<!-- x <- 4 -->
-<!-- y <- 6 -->
-<!-- x + y -->
-<!-- z <- "Hello Harvard Forest" -->
-<!-- print(z) -->
-<!-- ``` -->
-
-<!-- ##  -->
-
-<!-- We will go more in on object classes later in the workshop, but for -->
-<!-- now there is one important class you need to know and that is vectors. -->
-<!-- Vectors are objects that have multiple numbers (or strings, or -->
-<!-- logicals, etc) contained within.  To create a vector do the following: -->
-<!-- ``` objectname <- c(1,2,3,4,5)``` . ```c()``` is a function that -->
-<!-- stands for concatenate. -->
+```
 
 
-<!-- ## Activity: What if we want to store more than one value at a time? -->
+```{r}
+2+2
+2-2
+2*2
+2/2
+2%*%2
+```
 
-<!-- ##  -->
+## Operators, Objects and Functions
 
-<!-- ```{r, results = T} -->
-<!-- v <- c(1,2,3,4,10)  -->
-<!-- sum(v) -->
+Operators are characters that do things like math, logical operations,
+equalities, etc.
 
-<!-- v2 <- c(10,15,20,30,40) -->
-<!-- v + v2 -->
+Objects (aka. variables) are names that can "store" information, like
+data.
 
-<!-- ``` -->
+Functions are special types of objects that can do things, they all
+have the form of <tt>**name**</tt>(*arguments*). For example:
 
-<!-- ##  -->
-<!-- ## [R as a second language]  -->
+```{r, eval=FALSE}
+help('help')
+```
 
-<!-- - Learning R (or any computer language) is similar to learning a foreign language. -->
-<!-- - You have to learn more than just the words: you have to learn the -->
-<!--   grammar, punctuation and syntax of the language. -->
-<!-- - Just like in a foreign language, R has many commands that are -->
-<!--  cognates of English words.  This is helpful when learning, as you -->
-<!--  often can figure out what a function does from its name alone. -->
-<!-- - Though be wary, just like in human languages there are -->
-<!--  sometimes false cognates. -->
+##Data types and Object classes
 
-<!-- ## Can you guess what the following functions do? -->
+There are multiple data types, but for now we just want you to be
+aware that are different types:  characters vs. numbers vs. logical
 
-<!-- ```{r, eval = FALSE}  -->
-<!-- mean(x)  -->
-<!-- max(x)  -->
-<!-- plot(x)  -->
-<!-- Map(x)  -->
-<!-- ``` -->
+If you do not use "" (or ''), R will read whatever word/combination of
+characters you type as an object. Therefore R will read ``` ABCD ```
+as an attempt to call an object that doesn't exist, but ``` "ABCD" ``` as a character string.
 
-<!-- ## About arguments... -->
+## Activity: What can we do with objects?
 
-<!-- - Most functions have default settings for most arguments -->
-<!-- - You don't always have to state the argument name, R infers from the -->
-<!--   ordering of the arguments -->
-<!-- - Like Las Vegas, what happens in a function, stays inside a function -->
-<!--   (most of the time...), so you don't have to worry about argument -->
-<!--   names that are inside of functions over-writing your objects outside -->
-<!--   of the function -->
-<!-- - Use <tt>tab</tt> to try and complete the names of functions and -->
-<!--   arguments -->
+##
 
-<!-- ## Activity: Pick a function and explore the arguments! -->
+```{r, results = T}
+x <- 4
+y <- 6
+x + y
+z <- "Hello Harvard Forest"
+print(z)
+```
 
-<!-- ##  -->
+##
 
-<!-- 1. <tt>help()</tt> or <tt>?</tt> -->
-<!-- 2. Use tab completion -->
-
-<!-- ## Scripting -->
-
-<!-- A script is a file that you can store your code for later use! -->
-
-<!-- So, open up a new script file and save it to your Rwksp/src directory. -->
-
-<!-- Commenting can be done using <tt>#</tt> because R will ignore the -->
-<!-- entire line to the right of it.  -->
+We will go more in on object classes later in the workshop, but for
+now there is one important class you need to know and that is vectors.
+Vectors are objects that have multiple numbers (or strings, or
+logicals, etc) contained within.  To create a vector do the following:
+``` objectname <- c(1,2,3,4,5)``` . ```c()``` is a function that
+stands for concatenate.
 
 
-<!-- ## Style and Annotation -->
+## Activity: What if we want to store more than one value at a time?
 
-<!-- Be sure to use style (i.e. formatting of your code) and annotation -->
-<!-- that will make your code usable later by others and yourself!  -->
+##
 
-<!-- > 1. R script names should always end in .R -->
-<!-- > 2. Try and keep names simple, i.e. 3-5 characters, lowercase -->
-<!-- > 3. Put spaces around operators and after commas and before left parentheses except after function names -->
-<!-- > 4. Use <tt> <- </tt> for assignment, rather than <tt>=</tt> -->
-<!-- > 5. For more info on appropriate formatting, see http://stat405.had.co.nz/r-style.html -->
+```{r, results = T}
+v <- c(1,2,3,4,10)
+sum(v)
+
+v2 <- c(10,15,20,30,40)
+v + v2
+
+```
+
+##
+## [R as a second language]
+
+- Learning R (or any computer language) is similar to learning a foreign language.
+- You have to learn more than just the words: you have to learn the
+  grammar, punctuation and syntax of the language.
+- Just like in a foreign language, R has many commands that are
+ cognates of English words.  This is helpful when learning, as you
+ often can figure out what a function does from its name alone.
+- Though be wary, just like in human languages there are
+ sometimes false cognates.
+
+## Can you guess what the following functions do?
+
+```{r, eval = FALSE}
+mean(x)
+max(x)
+plot(x)
+Map(x)
+```
+
+## About arguments...
+
+- Most functions have default settings for most arguments
+- You don't always have to state the argument name, R infers from the
+  ordering of the arguments
+- Like Las Vegas, what happens in a function, stays inside a function
+  (most of the time...), so you don't have to worry about argument
+  names that are inside of functions over-writing your objects outside
+  of the function
+- Use <tt>tab</tt> to try and complete the names of functions and
+  arguments
+
+## Activity: Pick a function and explore the arguments!
+
+##
+
+1. <tt>help()</tt> or <tt>?</tt>
+2. Use tab completion
+
+## Scripting
+
+A script is a file that you can store your code for later use!
+
+So, open up a new script file and save it to your Rwksp/src directory.
+
+Commenting can be done using <tt>#</tt> because R will ignore the
+entire line to the right of it.
+
+
+## Style and Annotation
+
+Be sure to use style (i.e. formatting of your code) and annotation
+that will make your code usable later by others and yourself!
+
+> 1. R script names should always end in .R
+> 2. Try and keep names simple, i.e. 3-5 characters, lowercase
+> 3. Put spaces around operators and after commas and before left parentheses except after function names
+> 4. Use <tt> <- </tt> for assignment, rather than <tt>=</tt>
+> 5. For more info on appropriate formatting, see http://stat405.had.co.nz/r-style.html
 
 
 
@@ -242,28 +238,26 @@ weather
                                                                                
 #### __From this point on we will be using the data we collected from you all.__
 
-<!-- Lau: double check flow -->
+http://tinyurl.com/REUdata-csv
 
-Setting the working directory
-
-Often data will already be entered into other formats or programs and
-we'll need to read it in so we can work with it.
-
-
-
-__Remember:__ We have to make sure to save it as an object!
 ```{r, echo=FALSE,results=F}
 setwd('../')
 
 ```
 
+## 
+
+Often data will already be entered into other formats or programs and
+we'll need to read it in so we can work with it.
+
+_Note: There are many functions for reading-in different types of files._
+
+__Remember:__ We have to make sure to save it as an object!
+
 ```{r, eval = T , results = F}
 REUdata <- read.csv("../../data/REUdata.csv")
 
 ```
-
-_Note: There are many functions for reading-in different types of files._
-
 
 ## 2.  [Checking Data]
 
@@ -271,14 +265,28 @@ _Note: There are many functions for reading-in different types of files._
 The first thing we need to do after we read in our data is to look at it.  This accomplishes a couple things:
 
 1. We can get to know our data.
-2. We can see if R has accidentally changed the data (often column names will be different if they were ented in Excel or other programs), and sometimes even the data may have been reformatted.
-3. We can look for errors : often data will have quality issues. There can be typos,
-misclassifications, and missing data.
+2. We can see if R has accidentally changed the data (often column
+   names will be different if they were ented in Excel or other
+   programs), and sometimes even the data may have been reformatted.
+3. We can look for errors : often data will have quality issues. There
+can be typos, misclassifications, and missing data.
 
 
-There are all kinds of tools available to us for data exploration. Here are some common ones that we'll use today:
+## 
+
+There are all kinds of tools available to us for data
+exploration. Here are some common ones that we'll use today:
 
 * ```summary(),hist(),table(), is.na(), complete.cases(), names(), head(),tail()```
+
+## 
+
+Note: We will cover selection/indexing/subsetting of data in much more
+detail in the next class.  For now, the main thing to pay attention to
+is that using the ```[]``` brackets after our object name and then the
+column name comes in quotations and after a comma:
+```ObjectName[,"ColumnName"]```
+
 
 ```{r, eval = T}
 REUdata[,"Name"]  ####THIS IS HOW YOU SELECT A COLUMN
@@ -287,13 +295,10 @@ table(REUdata[,"I.have.used.R"])
 
 ```
 
-Note: We will cover selection/indexing/subsetting of data in much more detail in the next class. 
-For now, the main thing to pay attention to is that using the ```[]``` brackets after 
-our object name and then the column name comes in quotations and after a comma: ```ObjectName[,"ColumnName"]```
+## Activity: Play with the data...
 
-## Activity: Play with your data...
 
-## 
+## Wait. We're missing an important step.
 
 1. Get the data 
 2. Check the data
@@ -316,6 +321,8 @@ our object name and then the column name comes in quotations and after a comma: 
 7. Make and save final figures
 
 ## 0. [Questions?]
+
+What are some questions that people are curious about?
 
 <!-- Matt will cover this -->
 
@@ -350,36 +357,53 @@ names(REUdata)
 
 ##Activity: play around with plots!
 
-Pick one of the questions we came up with and figure out a way to visualize that data. 
-Some common plotting functions that you might want to use are: ```plot(), barplot(), boxplot(), hist()```
-
-
+Pick one of the questions we came up with and figure out a way to
+visualize that data.  Some common plotting functions that you might
+want to use are: ```plot(), barplot(), boxplot(), hist()```
 
 ## Statistics: Testing for generality
 
 <!-- Matt: add PDQ stats intro and search with google -->
 
-
+- Statistics are used to make sense of data
+- Statistical tests are used to generalize the results obtained from a
+  sample
+- Frequentist statistics is one possible school of statistics that
+  defines probabilities as long run frequencies and uses the
+  probability of "null" hypotheses to answer statistical questions
 
 ## Export data
 
-While in general it's preferable to output figures or summary files, there are times when you'll 
-want to save your cleaned and processed data.   One way to do this is to output in the same 
-format that read it in with```write.csv()```.  Another option is to use ```save()``` which can 
-save your R object as is. This has some uses if you have a 
-format that's not amenable to writing to a .csv or other common format.
+While in general it's preferable to output figures or summary files,
+there are times when you'll want to save your cleaned and processed
+data.  One way to do this is to output in the same format that read it
+in with```write.csv()```.  
+
+Another option is to use ```save()``` which can save your R object as
+is. This has some uses if you have a format that's not amenable to
+writing to a .csv or other common format.
 
 ## Export figures
 
-One of the great things about R is that you can make highly customizeable and presentation/publication ready
-figures with ease. But once we make them we'll need to get them out of R.
-One easy way to do this is to right-click on the figure itself (in either R or Rstudio) and paste it wherever you want.
-Alternatively you can use commands to output figures:
-```{r,eval = F}
-pdf() # or jpeg() or many other common formats
-plot()#Code to create figure
-dev.off() #this will close and save the image.
-```
+One of the great things about R is that you can make highly
+customizeable and presentation/publication ready figures with
+ease. But once we make them we'll need to get them out of R.  One easy
+way to do this is to right-click on the figure itself (in either R or
+Rstudio) and paste it wherever you want.  Alternatively you can use
+commands to output figures:  ```{r,eval = F} pdf() # or jpeg() or many
+other common formats plot()#Code to create figure dev.off() #this will
+close and save the image.  ```
+
+## Topics for Day 3 and beyond!
+
+- The art of modularizing code 
+- subsetting data
+- character searching
+- string manipulation
+- running a leaflet or shiny app
+- loops and apply functions
+- lists
+
 
 <!-- # Day 3  -->
 
