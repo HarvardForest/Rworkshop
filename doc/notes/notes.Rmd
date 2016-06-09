@@ -7,6 +7,8 @@ always_allow_html: yes
 ---
 ***
 
+http://tinyurl.com/HFRwkshp-notes
+
 # Day 1
 
 - [Getting setup]
@@ -290,10 +292,21 @@ column name comes in quotations and after a comma:
 
 ```{r, eval = T}
 REUdata[,"Name"]  ####THIS IS HOW YOU SELECT A COLUMN
+
+```
+
+## 
+```{r, eval = T}
 head(REUdata)
+
+```
+
+## 
+```{r, eval = T}
 table(REUdata[,"I.have.used.R"])
 
 ```
+
 
 ## Activity: Play with the data...
 
@@ -330,29 +343,48 @@ What are some questions that people are curious about?
 ## 3. [Prep the data]
 
 Let's look at the responses to the Pirates or Ninjas question.
+
+## 
+
 ```{r, eval = T}
 table(REUdata$Pirates.or.Ninjas)
 ```
 
-As we can see there are many responses that don't fall under the category Pirate or Ninja. For our first pass,
-we want to get rid of any that aren't just clearcut Pirates or Ninjas. 
-To do that we need to make a clean version of it without the other values.
+## 
+
+As we can see there are many responses that don't fall under the
+category Pirate or Ninja. For our first pass, we want to get rid of
+any that aren't just clearcut Pirates or Ninjas.  To do that we need
+to make a clean version of it without the other values.
 
 ##
 
 ```{r , eval=T,results=T}
-pirates.or.ninjas <- c('p','n','p',NA,'p','n','n','p',NA,NA,NA,'p','p',NA,'p',NA,'p','n',NA,'n','n',NA)
+pirates.or.ninjas <- c('p','n','p',NA,'p','n',
+     'n','p',NA,NA,NA,'p','p',NA,
+     'p',NA,'p','n',NA,'n','n',NA)
+```
 
+## 
+
+```{r , eval=T,results=T}
 table(pirates.or.ninjas)
+```
 
+## 
+
+```{r , eval=T,results=T}
 barplot(table(pirates.or.ninjas))
+```
 
-##We can then append this new clean "Pirates or Ninjas to our dataframe"
+## 
+
+We can then append this new clean "Pirates or Ninjas to our dataframe"
+
+```{r , eval=T,results=T}
 names(REUdata)
-
 REUdata[,"clean.Pirates.Ninjas"] <- pirates.or.ninjas
 names(REUdata)
-
 ```
 
 ##Activity: play around with plots!
