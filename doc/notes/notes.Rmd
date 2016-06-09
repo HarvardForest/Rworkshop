@@ -252,13 +252,13 @@ we'll need to read it in so we can work with it.
 
 
 __Remember:__ We have to make sure to save it as an object!
-```{r, echo=FALSE,results=hide}
+```{r, echo=FALSE,results=F}
 setwd('../')
 
 ```
 
-```{r, eval = F, }
-REUdata <- read.csv("../data/REUdata.csv")
+```{r, eval = T , results = F}
+REUdata <- read.csv("../../data/REUdata.csv")
 
 ```
 
@@ -267,22 +267,31 @@ _Note: There are many functions for reading-in different types of files._
 
 ## 2.  [Checking Data]
 
-<!-- Luca: finish up -->
-<!-- - Talk about exploring data and why to double check -->
-<!-- - Cover column selection  -->
 
-Often data will have quality issues. There can be typos,
+The first thing we need to do after we read in our data is to look at it.  This accomplishes a couple things:
+
+1. We can get to know our data.
+2. We can see if R has accidentally changed the data (often column names will be different if they were ented in Excel or other programs), and sometimes even the data may have been reformatted.
+3. We can look for errors : often data will have quality issues. There can be typos,
 misclassifications, and missing data.
 
-* summary(),hist(),table(), is.na(), complete.cases(), names()
 
-REUdata[,'Name']
+There are all kinds of tools available to us for data exploration. Here are some common ones that we'll use today:
 
+* ```summary(),hist(),table(), is.na(), complete.cases(), names(), head(),tail()```
+
+```{r, eval = T}
+REUdata[,"Name"]  ####THIS IS HOW YOU SELECT A COLUMN
+head(REUdata)
+table(REUdata[,"I.have.used.R"])
+
+```
+
+Note: We will cover selection/indexing/subsetting of data in much more detail in the next class. 
+For now, the main thing to pay attention to is that using the ```[]``` brackets after 
+our object name and then the column name comes in quotations and after a comma: ```ObjectName[,"ColumnName"]```
 
 ## Activity: Play with your data...
-
-
-
 
 ## 
 
@@ -295,7 +304,7 @@ REUdata[,'Name']
 7. Make and save final figures
 
 
-## REUs, climate change and the ninja-pirate-zombie apocalypse
+## Wait. We're missing an important step.
 
 0. Get a question and decide on analyses
 1. Get the data 
@@ -313,27 +322,37 @@ REUdata[,'Name']
 
 ## 3. [Prep the data]
 
-<!-- Luca: finish example writing vector -->
+Let's look at the responses to the Pirates or Ninjas question.
+```{r, eval = T}
+table(REUdata$Pirates.or.Ninjas)
+```
 
-```{r , eval=FALSE,echo=FALSE}
+As we can see there are many responses that don't fall under the category Pirate or Ninja. For our first pass,
+we want to get rid of any that aren't just clearcut Pirates or Ninjas. 
+To do that we need to make a clean version of it without the other values.
 
-pirates.or.ninjas <- c('p','n','p',NA,)
+##
 
-## append with x[,'pirate.ninja']
+```{r , eval=T,results=T}
+pirates.or.ninjas <- c('p','n','p',NA,'p','n','n','p',NA,NA,NA,'p','p',NA,'p',NA,'p','n',NA,'n','n',NA)
+
+table(pirates.or.ninjas)
+
+barplot(table(pirates.or.ninjas))
+
+##We can then append this new clean "Pirates or Ninjas to our dataframe"
+names(REUdata)
+
+REUdata[,"clean.Pirates.Ninjas"] <- pirates.or.ninjas
+names(REUdata)
 
 ```
 
 ##Activity: play around with plots!
 
-<!-- Luca: change the text to match working with the cleaned pirates.ninjas -->
-<!-- and give them a group of functions to use -->
+Pick one of the questions we came up with and figure out a way to visualize that data. 
+Some common plotting functions that you might want to use are: ```plot(), barplot(), boxplot(), hist()```
 
-With a set of data, figure out a way to visualize the mean of that
-data. This will challenge you to use the resources and tools that
-you've learned today, and is also very similar to the way you'll have
-to use R in the future. You have an end goal in mind, but you need to
-do some searching and experimentation to figure out how best to
-achieve it!
 
 
 ## Statistics: Testing for generality
@@ -342,23 +361,25 @@ achieve it!
 
 
 
-## Export data? 
+## Export data
 
-<!-- Luca: flesh out section -->
-
-write.csv()
-save()
+While in general it's preferable to output figures or summary files, there are times when you'll 
+want to save your cleaned and processed data.   One way to do this is to output in the same 
+format that read it in with```write.csv()```.  Another option is to use ```save()``` which can 
+save your R object as is. This has some uses if you have a 
+format that's not amenable to writing to a .csv or other common format.
 
 ## Export figures
 
-<!-- Luca: flesh out section -->
-
-Copy and paste
-
-pdf()
-plot()
-dev.off()
-
+One of the great things about R is that you can make highly customizeable and presentation/publication ready
+figures with ease. But once we make them we'll need to get them out of R.
+One easy way to do this is to right-click on the figure itself (in either R or Rstudio) and paste it wherever you want.
+Alternatively you can use commands to output figures:
+```{r,eval = F}
+pdf() # or jpeg() or many other common formats
+plot()#Code to create figure
+dev.off() #this will close and save the image.
+```
 
 <!-- # Day 3  -->
 
