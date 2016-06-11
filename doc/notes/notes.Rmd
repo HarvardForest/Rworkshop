@@ -191,7 +191,7 @@ that will make your code usable later by others and yourself!
 
 ## REUs, climate change and the ninja-pirate-zombie apocalypse
 
-1. Get the data 
+1. Get the data
 2. Check the data
 3. Prep the data
 4. Visualize patterns
@@ -199,23 +199,23 @@ that will make your code usable later by others and yourself!
 6. Export results
 7. Make and save final figures
 
- 
-##Warm-Up 
+
+##Warm-Up
 
 __Activity: Write a script that will do some useful math!__
-                                                                               
+
 ### Object Management
-After spending some time playing with R you may realize that you've created 
+After spending some time playing with R you may realize that you've created
 a lot of objects with assorted names, shapes, and sizes. Luckily there are some
 very useful functions that will help you keep track and clean up your workspace.
-                                                                               
+
 ```{r, eval = FALSE}
 ls()
 rm()
 rm(list = ls())
 ```
 
-## 
+##
 
 Go ahead and clear your workspace now for the activities ahead.
 
@@ -233,11 +233,11 @@ precipitation <- c(.01,1,0,2,.8,1.5) # in inches
 * Maybe more useful is to create a dataframe:
 
 ```{r, results = T}
-weather <- data.frame(date = c("3/18","3/19","4/10","4/11","4/18","5/10"),temperature = c(70,80,50,53,60,45), 
+weather <- data.frame(date = c("3/18","3/19","4/10","4/11","4/18","5/10"),temperature = c(70,80,50,53,60,45),
                       precipitation = c(.01,1,0,2,.8,1.5) )
 weather
 ```
-                                                                               
+
 #### __From this point on we will be using the data we collected from you all.__
 
 http://tinyurl.com/REUdata-csv
@@ -247,7 +247,7 @@ setwd('../')
 
 ```
 
-## 
+##
 
 Often data will already be entered into other formats or programs and
 we'll need to read it in so we can work with it.
@@ -274,14 +274,14 @@ The first thing we need to do after we read in our data is to look at it.  This 
 can be typos, misclassifications, and missing data.
 
 
-## 
+##
 
 There are all kinds of tools available to us for data
 exploration. Here are some common ones that we'll use today:
 
 * ```summary(),hist(),table(), is.na(), complete.cases(), names(), head(),tail()```
 
-## 
+##
 
 Note: We will cover selection/indexing/subsetting of data in much more
 detail in the next class.  For now, the main thing to pay attention to
@@ -295,13 +295,13 @@ REUdata[,"Name"]  ####THIS IS HOW YOU SELECT A COLUMN
 
 ```
 
-## 
+##
 ```{r, eval = T}
 head(REUdata)
 
 ```
 
-## 
+##
 ```{r, eval = T}
 table(REUdata[,"I.have.used.R"])
 
@@ -313,7 +313,7 @@ table(REUdata[,"I.have.used.R"])
 
 ## Wait. We're missing an important step.
 
-1. Get the data 
+1. Get the data
 2. Check the data
 3. Prep the data
 4. Visualize patterns
@@ -324,14 +324,22 @@ table(REUdata[,"I.have.used.R"])
 
 ## Wait. We're missing an important step.
 
+#Day 3
+
+###Warm-Up Activity###
+Copy/download the script we posted. Run this script and make sure you understand what each line is doing.
+
+###Remember our workflow...###
 0. Get a question and decide on analyses
-1. Get the data 
+1. Get the data
 2. Check the data
 3. Prep the data
 4. Visualize patterns
 5. A bit about statistics and some tests
 6. Export results
 7. Make and save final figures
+
+
 
 ## 0. [Questions?]
 
@@ -379,7 +387,8 @@ barplot(table(pirates.or.ninjas))
 
 ## 
 
-We can then append this new clean "Pirates or Ninjas to our dataframe"
+###Creating new columns###
+We can then append this new clean "Pirates or Ninjas to our dataframe". Another way to think of this is that we're going to add a new column to our data frame that will have ONLY 2 possible values.
 
 ```{r , eval=T,results=T}
 names(REUdata)
@@ -387,11 +396,41 @@ REUdata[,"clean.Pirates.Ninjas"] <- pirates.or.ninjas
 names(REUdata)
 ```
 
-##Activity: play around with plots!
+Notice that we are using the same syntax that we used when we wanted to select a column beforehand.  However,
+we are now asking for a column that doesnt exist, and then using the assignment operator ``` <- ``` to assign values to this column.
+This creates a new column with the values that we give it.
 
-Pick one of the questions we came up with and figure out a way to
-visualize that data.  Some common plotting functions that you might
-want to use are: ```plot(), barplot(), boxplot(), hist()```
+###Logicals and Element Reassignments
+
+But what about some of the other responses in the original Pirates or Ninjas column? Even though they didn't exactly match the response we were looking at some of them are still clearly either Pirates or Ninjas, and by not including them we're throwing away data points that we worked hard to colect! Instead of adding a whole new column for these few points, it makes more sense to change individual values in the column we just created.
+We will do this by selecting a row in addition to a column.  Remember howe put a comma before our column names before? This is so
+that R knew it was a column and not a row you were selecting!  The format will look like this: ``` ObjectName[rowNumber,"columnName"]```.
+
+```{r,eval = T, results= T}
+REUdata$Pirates.or.Ninjas
+
+##Looking at the output we can see that the 14th value is "Ninjas!". We did not include this before but I think it's safe to 
+##assume that this should count as a 'n'.
+
+REUdata[14, ]
+
+REUdata[14,"clean.Pirates.Ninjas"]
+
+table(REUdata$clean.Pirates.Ninjas)
+REUdata[14,"clean.Pirates.Ninjas"] <- "n"
+REUdata[14,"clean.Pirates.Ninjas"]
+table(REUdata$clean.Pirates.Ninjas)
+```
+
+Now, while this works, it's a bit slow to have to manually select each element you want to replace.
+This is where logicals come in. 
+
+
+
+###Activity: Replace another element of the Pirates/ninjas data
+
+
+
 
 ## Statistics: Testing for generality
 
@@ -426,15 +465,23 @@ commands to output figures:  ```{r,eval = F} pdf() # or jpeg() or many
 other common formats plot()#Code to create figure dev.off() #this will
 close and save the image.  ```
 
-## Topics for Day 3 and beyond!
 
-- The art of modularizing code 
-- subsetting data
-- character searching
-- string manipulation
-- running a leaflet or shiny app
-- loops and apply functions
-- lists
+##Activity: play around with plots!
+
+Pick one of the questions we came up with and do your best to answer it!
+Go through the full workflow we've learned and see if you can make it all the way
+from a question to figures and stats!
+
+
+<!-- ## Topics for Day 3 and beyond! -->
+
+<!-- - The art of modularizing code  -->
+<!-- - subsetting data -->
+<!-- - character searching -->
+<!-- - string manipulation -->
+<!-- - running a leaflet or shiny app -->
+<!-- - loops and apply functions -->
+<!-- - lists -->
 
 
 <!-- # Day 3  -->
