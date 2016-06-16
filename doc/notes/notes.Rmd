@@ -257,7 +257,7 @@ _Note: There are many functions for reading-in different types of files._
 __Remember:__ We have to make sure to save it as an object!
 
 ```{r, eval = T , results = F}
-REUdata <- read.csv("../../data/REUdata.csv")
+REUdata <- read.csv("../data/REUdata.csv")
 
 ```
 
@@ -402,9 +402,17 @@ This creates a new column with the values that we give it.
 
 ###Logicals and Element Reassignments
 
-But what about some of the other responses in the original Pirates or Ninjas column? Even though they didn't exactly match the response we were looking at some of them are still clearly either Pirates or Ninjas, and by not including them we're throwing away data points that we worked hard to colect! Instead of adding a whole new column for these few points, it makes more sense to change individual values in the column we just created.
-We will do this by selecting a row in addition to a column.  Remember howe put a comma before our column names before? This is so
-that R knew it was a column and not a row you were selecting!  The format will look like this: ``` ObjectName[rowNumber,"columnName"]```.
+But what about some of the other responses in the original Pirates or
+Ninjas column? Even though they didn't exactly match the response we
+were looking at some of them are still clearly either Pirates or
+Ninjas, and by not including them we're throwing away data points that
+we worked hard to colect! Instead of adding a whole new column for
+these few points, it makes more sense to change individual values in
+the column we just created.  We will do this by selecting a row in
+addition to a column.  Remember howe put a comma before our column
+names before? This is so that R knew it was a column and not a row you
+were selecting!  The format will look like this: ```
+ObjectName[rowNumber,"columnName"]```.
 
 ```{r,eval = T, results= T}
 REUdata$Pirates.or.Ninjas
@@ -422,15 +430,32 @@ REUdata[14,"clean.Pirates.Ninjas"]
 table(REUdata$clean.Pirates.Ninjas)
 ```
 
-Now, while this works, it's a bit slow to have to manually select each element you want to replace.
-This is where logicals come in. 
+## Activity: Replace another element of the Pirates/ninjas data
+
+## 
+
+Now, while this works, it's a bit slow to have to manually select each
+element you want to replace.  This is where logicals come in.
+
+### Logical operations and assignments
+
+```{r }
+REUdata[,"Pirates.or.Ninjas"] == 'Ninjas'
+REUdata[,"Pirates.or.Ninjas"] == 'Pirates'
+!(REUdata[,"Pirates.or.Ninjas"] == 'Ninjas')
+!(REUdata[,"Pirates.or.Ninjas"] == 'Pirates')
+REUdata[,"Pirates.or.Ninjas"] == 'Pirates' | REUdata[,"Pirates.or.Ninjas"] == 'Ninjas'
+REUdata[,"Pirates.or.Ninjas"] == 'Pirates' & REUdata[,"Pirates.or.Ninjas"] == 'Ninjas'
+```
+
+## Activity: Make anything that not Pirate or Ninja into an NA
+
+## 
 
 
-
-###Activity: Replace another element of the Pirates/ninjas data
-
-
-
+```{r }
+REUdata[!(REUdata[,"Pirates.or.Ninjas"] == "Pirates" | REUdata[,"Pirates.or.Ninjas"] == "Ninjas"),"Pirates.or.Ninjas"] <- NA
+```
 
 ## Statistics: Testing for generality
 
