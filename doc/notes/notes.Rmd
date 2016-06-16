@@ -242,10 +242,6 @@ weather
 
 http://tinyurl.com/REUdata-csv
 
-```{r, echo=FALSE,results=F}
-setwd('../')
-
-```
 
 ##
 
