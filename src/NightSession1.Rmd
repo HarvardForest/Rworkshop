@@ -1,0 +1,55 @@
+---
+title: "Ecological Analysis with R: Night Session #1"
+output: html_document
+incremental: true
+always_allow_html: yes
+
+---
+###
+For tonight's class we will be going through the same workflow that we went through before, but we will be answering a real ecological question, and we will be going into some more advanced topics.
+While we all be working with the same data, there will be options with the analysis for anyone looking for a bit of a challenge.
+
+## Once again remember our workflow.
+0. Get a question and decide on analyses
+1. Get the data
+2. Check the data
+3. Prep the data
+4. Visualize patterns
+5. Statistical Testing
+6. Export results
+
+
+###0.) In this case, the question is decided: __Are there differences in productivity between trees in Washington and trees in Massachusetts?__
+
+###1.) Download the data from GitHub https://github.com/HarvardForest/Rworkshop/tree/master/data
+	+ Download CleanedMATrees.csv & CleanedWATrees.csv
+	+ If you would like to start out with a bit of a challenge also download: MA_PLOT.csv & WA_PLOT.csv
+	+ DO NOT DOUBLE CLICK OR OPEN WITH EXCEL
+	+ Read it into R 
+
+
+###2.) 	Look at the data.  What columns will be useful for us to answer the question? Are there any pieces that we don't know what they are? Make sure to compare the states!
+
+__Challenge Mode:__
+Look at the plot data, see if you can figure out the connections between plot and tree. Figure out how many unique trees there are and how many unique plots.
+
+
+###3.)   We want to prep the data for our analysis. Seems easy, let's just sum all the carbon in each state! 
+
+``` {r,eval = F}
+
+install.packages(plyr)
+ddply(DATASET,.(COLUMNNAME),summarise,TotalCarbon=sum(CARBON_AG))
+
+```
+
+#####What are the issues with this?
+  + Different amounts of area in state.
+  + Different amounts of forested land.
+  + How to correct for these?
+
+__Challenge Mode:__
+Extract only the plots that were sampled and are forested (```PLOT_STATUS_CD == 1```)
+Link the PLOT table and the TREE table using ```merge()``` or ```join()```.
+
+
