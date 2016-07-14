@@ -22,7 +22,8 @@ While we all be working with the same data, there will be options with the analy
 ###0.) In this case, the question is decided: __Are there differences in productivity between trees in Washington and trees in Massachusetts?__
 
 ###1.) Download the data from GitHub https://github.com/HarvardForest/Rworkshop/tree/master/data
-	+ Download CleanedMATrees.csv & CleanedWATrees.csv
+    + Setup your project folder 
+    + Download CleanedMATrees.csv & CleanedWATrees.csv
 	+ If you would like to start out with a bit of a challenge also download: MA_PLOT.csv & WA_PLOT.csv
 	+ DO NOT DOUBLE CLICK OR OPEN WITH EXCEL
 	+ Read it into R 
