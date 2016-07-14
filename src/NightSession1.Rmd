@@ -54,3 +54,78 @@ Extract only the plots that were sampled and are forested (```PLOT_STATUS_CD == 
 Link the PLOT table and the TREE table using ```merge()``` or ```join()```.
 
 
+###4.) Plotting using ggplot
+
+The ggplot approach to plotting produces visually appealing graphics
+fairly easily and is currently one of the more commonly used graphics
+packages in R. 
+
+```{r ggplot1, eval=F}
+
+ggplot(data, aes(x=x_variable, y=y_variable)) + 
+    geom_point(shape=1)
+
+```
+
+###4.) Plotting using ggplot
+
+```{r ggplot2, eval=F}
+
+library(ggplot2)
+dat <- rbind(MAtrees,WAtrees)
+dat$state <- c(rep('MA',nrow(MAtrees)),rep('WA',nrow(WAtrees)))
+
+ggplot(dat, aes(x=CN, y=DIA, color=state)) + 
+    geom_point(shape=1) + 
+    scale_colour_hue(l=50) + 
+    geom_smooth(method=lm, se=TRUE) 
+
+```
+
+###4.) Plotting using ggplot
+
+```{r ggplot2, eval=F}
+
+our.plot <- ggplot(dat, aes(x=CN, y=DIA, color=state)) 
+
+our.plot +  geom_point(shape=1) + 
+    scale_colour_hue(l=50) + 
+    geom_smooth(method=lm, se=TRUE) 
+
+
+```
+
+
+###5.) Statistics
+
+
+```{r stats, eval=F}
+
+dia.WA14 <- WAtrees[WAtrees[,'INVYR'] == 2014,'DIA']
+dia.MA14 <- MAtrees[MAtrees[,'INVYR'] == 2014,'DIA']
+
+t.test(dia.WA14,dia.MA14)
+
+```
+###5.) Statistics
+
+```{r stats2, eval=F}
+
+fit <- aov(DIA~state,data=dat)
+summary(fit)
+
+capture.output(summary(fit))
+dia.anova <- capture.output(summary(fit))
+write.csv(dia.anova)
+
+
+```
+
+###5.) Statistics - Assumptions
+
+```{r stats2, eval=F}
+
+ggplot(dat, aes(x=DIA,color=state)) + 
+    geom_histogram()
+
+```

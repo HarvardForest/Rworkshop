@@ -3,7 +3,7 @@ library(ggplot2)
 
 ##this is for the instructors so that we have proof of concept when we're asking them to do things
 #setwd("D:/Rworkshop/Rworkshop/data/")
-#setwd('..data')
+#setwd('../data')
 MAtrees <- read.csv("CleanedMATrees.csv")
 WAtrees <- read.csv("CleanedWATrees.csv")
 
@@ -30,4 +30,30 @@ ggplot(dat, aes(x=CN, y=PLT_CN, color=state)) +
 
 dev.off()
 
+our.plot <- ggplot(dat, aes(x=CN, y=DIA, color=state)) 
 
+our.plot +  geom_point(shape=1) + 
+    scale_colour_hue(l=50) + 
+    geom_smooth(method=lm, se=TRUE) 
+
+
+### Statistics
+
+## t-test
+dia.WA14 <- WAtrees[WAtrees[,'INVYR'] == 2014,'DIA']
+dia.MA14 <- MAtrees[MAtrees[,'INVYR'] == 2014,'DIA']
+t.test(dia.WA14,dia.MA14)
+
+## ANOVA
+fit <- aov(DIA~state,data=dat)
+summary(fit)
+
+## How do you save output
+capture.output(summary(fit))
+dia.anova <- capture.output(summary(fit))
+write.csv(dia.anova)
+
+## assumptions?
+## Are our sample sizes equal?
+ggplot(dat, aes(x=DIA,color=state)) + 
+    geom_histogram()
