@@ -5,8 +5,9 @@
 ## Rscript build.R notes.Rmd
 ## 
 
-library(rmarkdown)
-library(knitr)
+packs <- c('rmarkdown','knitr')
+sapply(packs[!packs %in% installed.packages()[,1]],install.packages)
+sapply(packs,require,quietly=TRUE,character.only=TRUE)
 
 ## Build notes html
 x <- tail(commandArgs(trailingOnly=TRUE))
