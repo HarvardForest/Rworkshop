@@ -579,7 +579,7 @@ mean(x)
 mu(x)
 ```
 
-## Live-long lea**R**ning
+## Life-long lea**R**ning
 
 > - Packages, CRAN and the R universe
 > - Find a good cheat sheet
