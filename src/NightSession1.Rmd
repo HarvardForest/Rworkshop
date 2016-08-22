@@ -4,10 +4,11 @@ output: html_document
 incremental: true
 always_allow_html: yes
 
----
-###
-For tonight's class we will be going through the same workflow that we went through before, but we will be answering a real ecological question, and we will be going into some more advanced topics.
-While we all be working with the same data, there will be options with the analysis for anyone looking for a bit of a challenge.
+--- ### For tonight's class we will be going through the same workflow
+that we went through before, but we will be answering a real
+ecological question, and we will be going into some more advanced
+topics.  While we all be working with the same data, there will be
+options with the analysis for anyone looking for a bit of a challenge.
 
 ## Once again remember our workflow.
 0. Get a question and decide on analyses
@@ -19,7 +20,9 @@ While we all be working with the same data, there will be options with the analy
 6. Export results
 
 
-###0.) In this case, the question is decided: __Are there differences in productivity between trees in Washington and trees in Massachusetts?__
+###0.) In this case, the question is decided: __Are there differences
+   in productivity between trees in Washington and trees in
+   Massachusetts?__
 
 ###1.) Download the data from GitHub https://github.com/HarvardForest/Rworkshop/tree/master/data
     + Setup your project folder 
@@ -29,13 +32,18 @@ While we all be working with the same data, there will be options with the analy
 	+ Read it into R 
 
 
-###2.) 	Look at the data.  What columns will be useful for us to answer the question? Are there any pieces that we don't know what they are? Make sure to compare the states!
+###2.)  Look at the data.  What columns will be useful for us to
+   answer the question? Are there any pieces that we don't know what
+   they are? Make sure to compare the states!
 
-__Challenge Mode:__
-Look at the plot data, see if you can figure out the connections between plot and tree. Figure out how many unique trees there are and how many unique plots.
+__Challenge Mode:__ Look at the plot data, see if you can figure out
+the connections between plot and tree. Figure out how many unique
+trees there are and how many unique plots.
 
 
 ###3.)   We want to prep the data for our analysis. Seems easy, let's just sum all the carbon in each state! 
+
+
 
 ``` {r,eval = F}
 
@@ -58,39 +66,39 @@ Link the PLOT table and the TREE table using ```merge()``` or ```join()```.
 
 The ggplot approach to plotting produces visually appealing graphics
 fairly easily and is currently one of the more commonly used graphics
-packages in R. 
+packages in R.
 
-```{r ggplot1, eval=F}
+```{r , eval=F}
 
-ggplot(data, aes(x=x_variable, y=y_variable)) + 
+ggplot(data, aes(x=x_variable, y=y_variable)) +
     geom_point(shape=1)
 
 ```
 
 ###4.) Plotting using ggplot
 
-```{r ggplot2, eval=F}
+```{r , eval=F}
 
 library(ggplot2)
 dat <- rbind(MAtrees,WAtrees)
 dat$state <- c(rep('MA',nrow(MAtrees)),rep('WA',nrow(WAtrees)))
 
-ggplot(dat, aes(x=CN, y=DIA, color=state)) + 
-    geom_point(shape=1) + 
-    scale_colour_hue(l=50) + 
-    geom_smooth(method=lm, se=TRUE) 
+ggplot(dat, aes(x=CN, y=DIA, color=state)) +
+    geom_point(shape=1) +
+    scale_colour_hue(l=50) +
+    geom_smooth(method=lm, se=TRUE)
 
 ```
 
 ###4.) Plotting using ggplot
 
-```{r ggplot2, eval=F}
+```{r , eval=F}
 
-our.plot <- ggplot(dat, aes(x=CN, y=DIA, color=state)) 
+our.plot <- ggplot(dat, aes(x=CN, y=DIA, color=state))
 
-our.plot +  geom_point(shape=1) + 
-    scale_colour_hue(l=50) + 
-    geom_smooth(method=lm, se=TRUE) 
+our.plot +  geom_point(shape=1) +
+    scale_colour_hue(l=50) +
+    geom_smooth(method=lm, se=TRUE)
 
 
 ```
@@ -99,7 +107,7 @@ our.plot +  geom_point(shape=1) +
 ###5.) Statistics
 
 
-```{r stats, eval=F}
+```{r , eval=F}
 
 dia.WA14 <- WAtrees[WAtrees[,'INVYR'] == 2014,'DIA']
 dia.MA14 <- MAtrees[MAtrees[,'INVYR'] == 2014,'DIA']
@@ -109,7 +117,7 @@ t.test(dia.WA14,dia.MA14)
 ```
 ###5.) Statistics
 
-```{r stats2, eval=F}
+```{r , eval=F}
 
 fit <- aov(DIA~state,data=dat)
 summary(fit)
@@ -123,7 +131,7 @@ write.csv(dia.anova)
 
 ###5.) Statistics - Assumptions
 
-```{r stats2, eval=F}
+```{r , eval=F}
 
 ggplot(dat, aes(x=DIA,color=state)) + 
     geom_histogram()
