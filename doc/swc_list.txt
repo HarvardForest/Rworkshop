@@ -1,0 +1,60 @@
+http://swcarpentry.github.io/r-novice-gapminder/
+
+Setup Download files required for the lesson
+R and RStudio
+
+00:00 1. Introduction to R and RStudio	
+How to find your way around RStudio?
+How to interact with R?
+How to manage your environment?
+How to install packages?
+
+00:55 2. Project Management With RStudio
+How can I manage my projects in R?
+
+01:25 3. Seeking Help	
+How can I get help in R?
+
+01:45 4. Data Structures
+How can I read data in R?
+What are the basic data types in R?
+How do I represent categorical information in R?
+
+02:40 5. Exploring Data Frames  
+How can I manipulate a dataframe?
+
+03:10 6. Subsetting Data 
+How can I work with subsets of data in R?
+
+04:00 7. Control Flow	
+How can I make data-dependent choices in R?
+How can I repeat operations in R?
+
+05:05 8. Creating Publication-Quality Graphics
+How can I create publication-quality graphics in R?
+
+06:25 9. Vectorization 
+How can I operate on all the elements of a vector at once?
+
+06:50  10. Functions Explained	
+How can I write a new function in R?
+
+07:50  11. Writing Data
+How can I save plots and data created in R?
+
+08:10	12. Split-Apply-Combine	
+How can I do different calculations on different sets of data?
+
+09:10 13. Dataframe Manipulation with dplyr 
+How can I manipulate dataframes without repeating myself?
+
+10:05 14. Dataframe Manipulation with tidyr
+How can I change the format of dataframes?
+
+10:50 15. Producing Reports With knitr	
+How can I integrate software and reports?
+
+12:05 16. Writing Good Software	
+How can I write software that other people can use?
+
+12:20 Finish

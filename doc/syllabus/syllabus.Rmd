@@ -1,5 +1,5 @@
-Ecological Analytics with R
-===========================
+Programming for Reproducible Ecology in R
+=========================================
 
 <!-- library(rmarkdown);render('syllabus.Rmd',);render('syllabus.Rmd',output_format='pdf_document') -->
 
@@ -13,15 +13,13 @@ Ecological Analytics with R
 *Goal*: Students will learn how to use the R programming language for
  ecological analyses and gain experience with:
 
-- Managing analytical aspects of a project
-- Inputing, manipulating and exporting data
-- Statistical functions
+- Managing data
 - Exploring data patterns
+- Statistical functions
 - Coding and software best practices
 - Getting more help, experience and practice
 
-**Although statistics will be introduced very
-briefly, this will not be a statistics class.**
+**Although statistics will be introduced very briefly, this will not be a statistics class.**
 
 *Pre-requisites*: experience with using basic computer software
 
@@ -30,107 +28,54 @@ briefly, this will not be a statistics class.**
 *No laptop?* You can borrow a Harvard Forest laptop (contact
   Manisha Patel)
 
+*Before Class*
+
+- Install R: http://lib.stat.cmu.edu/R/CRAN/*
+- Install RStudio: https://www.rstudio.com/products/rstudio/download/
+- Download the example project: https://github.com/HarvardForest/myProject/archive/master.zip
+
+
 Class Schedule
 --------------
 
-**Quick Intro to the Course**
-
-**Location: Seminar Room**
-
-**Time: TBD**
-
-- What's my motiviation?
-- Data analysis is integral to ecology
-- Programming enables rapid, flexible analysis
-- Learning R is like learning a language, you already know so much
-- Examples: Data Processing, Plotting, Mapping, Modeling
-
 **First Meeting**
-
 **Location: Seminar Room**
+**June 1 8:30-10:00**
 
-**Time: TBD**
-
-*Before Class*
-
-- Connect to Harvard Forest wireless
-- Install R on your computer: http://lib.stat.cmu.edu/R/CRAN/*
-- Download the example project: https://github.com/HarvardForest/myProject/archive/master.zip
-
-- Analytics project framework 
-<!-- (Noble 2009 =  -->
-<!--   document organization, task scheduling, data management, analytics -->
-<!--   management, keeping an analytics notebook) -->
-- Operations
-- Objects 
-- Functions
-- Scripting and annotation (Save Our Source!)
-- Setting the working directory
-
-*Post-Class Challenge*
-
-- Explore the HF data archive and find a dataset relevant to your
-project.
-- Make sure to read the data ownership information!
+- What is R?
+- How to interact with R?
+- What can I do in R?
+- Why should I care what a function is?
+- How do I manage a project in R?
 
 **Second Meeting**
-
 **Location: Seminar Room**
+**June 8 8:30-10:00**
 
-**Time: TBD**
-
-- Entering data by hand
+- How do I enter data into R?
 - Manipulating vectors (sorting, ordering)
 - Manipulating matrices (sorting, appending)
 - Inputting data (read.csv,read.table)
-- Advanced data = lists
-
-*Post-Class Challenge*
-
-- Write a function that will import your HF dataset into R.
+- Why should I treat my data as *READ ONLY*?
+- What is a data frame anyway?
 
 **Third Meeting**
-
 **Location: Seminar Room**
+**June 15 8:30-10:00**
 
-**Time: TBD**
-
+- What are packages? (e.g., *ggplot*)
 - Overview of data visualization
 - Calculating basic statistics (mean and variance)
 - Writing your own functions (se: input, process, output)
-- What are packages? (e.g., *gplot*)
 - Barplot with error bars
 
-*Post-Class Challenge*
 
-- Write a script that will import your HF dataset and conduct analyses
-  on the data.
-
-**Fourth/Last Meeting**
-
-**Location: Seminar Room**
-
-**Time: TBD**
-
-- Organizing code
-- Getting data from the HF archives
-- Loops and applys
-- Versioning with github
-- Simulating data (runif and rnorm)
-- Data provenance
-
-
-*Post-Class Challenge*
-
-- Think of an ecological question/challenge that might be addressed
-  with software
-- Summer Hackathon?
-- [Code for America](https://www.codeforamerica.org)
-
-Readings and Resources
-----------------------
+Resources
+---------
 - R Cheat Sheet
 -- http://cran.r-project.org/doc/contrib/Short-refcard.pdf
+- Software Carpentry
+-- https://software-carpentry.org/lessons/
 - Plots with ggplots
 -- https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf
 - Code School
@@ -142,5 +87,6 @@ Readings and Resources
 -- https://www.codeforamerica.org
 
 - Learning Statistics
-- *Primer of Ecological Statistics* by Ellison and Gotelli
-- *The Ecological Detective* by Hillborn and Mangel
+-- *The Ecological Detective* by Hillborn and Mangel
+-- *Primer of Ecological Statistics* by Ellison and Gotelli
+

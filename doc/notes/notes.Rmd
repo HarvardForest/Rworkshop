@@ -40,8 +40,9 @@ http://tinyurl.com/HFRwkshp-notes
 
 ## Say hello to the Console...
 
-The Console is a command line where you can enter text, as if you are "talking"
-to the computer.
+Open-up Rstudio (or whatever flavor of R you are using) and head to
+The Console. This is a command line where you can enter text as if you
+are "talking" to the computer.
 
 ```{r}
 
