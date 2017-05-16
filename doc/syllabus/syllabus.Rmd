@@ -19,7 +19,8 @@ Programming for Reproducible Ecology in R
 - Coding and software best practices
 - Getting more help, experience and practice
 
-**Although statistics will be introduced very briefly, this will not be a statistics class.**
+**Although statistics will be introduced very briefly, this will not
+  be a statistics class.**
 
 *Pre-requisites*: experience with using basic computer software
 
@@ -39,8 +40,10 @@ Class Schedule
 --------------
 
 **First Meeting**
-**Location: Seminar Room**
-**June 1 8:30-10:00**
+
+*Location: Seminar Room*
+
+*June 1 8:30-10:00*
 
 - What is R?
 - How to interact with R?
@@ -49,8 +52,10 @@ Class Schedule
 - How do I manage a project in R?
 
 **Second Meeting**
-**Location: Seminar Room**
-**June 8 8:30-10:00**
+
+*Location: Seminar Room*
+
+*June 8 8:30-10:00*
 
 - How do I enter data into R?
 - Manipulating vectors (sorting, ordering)
@@ -60,8 +65,10 @@ Class Schedule
 - What is a data frame anyway?
 
 **Third Meeting**
-**Location: Seminar Room**
-**June 15 8:30-10:00**
+
+*Location: Seminar Room*
+
+*June 15 8:30-10:00*
 
 - What are packages? (e.g., *ggplot*)
 - Overview of data visualization
