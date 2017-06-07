@@ -1,0 +1,37 @@
+
+[5] 5min Reproducibility Overview (Matt)
+
+- popper diagram
+- http://people.fas.harvard.edu/~matthewklau/popper.png
+
+
+[10] 5min Review last week
+- Science and reproducibility
+- Intro to R and RStudio
+- Basic operations
+- Relational operators
+- Objects
+- Assignments (<-, = , ->,assign)
+- Managing your workspace (ls and rm)
+
+[20] 10min Questions...
+
+[35] 15min Setup project workspace (SWC)
+http://swcarpentry.github.io/r-novice-gapminder/02-project-intro/
+
+[40] 5min High level scripting best practices (refer to SWC)
+http://swcarpentry.github.io/r-novice-gapminder/16-wrap-up/
+
+[50] 10min Getting help (SWC)
+http://swcarpentry.github.io/r-novice-gapminder/03-seeking-help/
+
+[90] 40min Data Structures
+How can I read data in R?
+What are the basic data types in R?
+How do I represent categorical information in R?
+
+[If there's time] 30min Subsetting Data 
+How can I work with subsets of data in R?
+
+
+

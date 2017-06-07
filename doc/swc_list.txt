@@ -7,7 +7,7 @@ R and RStudio
 How to find your way around RStudio?
 How to interact with R?
 How to manage your environment?
-How to install packages?
+
 
 00:55 2. Project Management With RStudio
 How can I manage my projects in R?
@@ -18,6 +18,7 @@ How can I get help in R?
 01:45 4. Data Structures
 How can I read data in R?
 What are the basic data types in R?
+How to install packages?
 How do I represent categorical information in R?
 
 02:40 5. Exploring Data Frames  
@@ -31,6 +32,7 @@ How can I make data-dependent choices in R?
 How can I repeat operations in R?
 
 05:05 8. Creating Publication-Quality Graphics
+How to install packages?
 How can I create publication-quality graphics in R?
 
 06:25 9. Vectorization 
