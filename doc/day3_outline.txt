@@ -1,0 +1,25 @@
+[5] Big Picture and Recap
+- popper diagram
+- http://people.fas.harvard.edu/~matthewklau/popper.png
+
+[10] Scripting BP and Getting Help! and the Broader R Community
+
+[30] Indexing
+- Simple indexing (vector, matrix, array, list, dataframe)
+- Subsetting (columns, rows, col*row)
+- Re-assigning elements
+- Challenge Exercise
+
+[45] Scientific Workflow Lab
+- Simple project from data to code to analysis to figures
+- Save Data to data directory
+- Import data into R
+- Check data and clean data
+- Conduct a correlation analysis
+- Create a bivariate plot
+- Save the plot to results
+
+
+
+
+
