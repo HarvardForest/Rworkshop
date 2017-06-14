@@ -14,13 +14,12 @@ http://people.fas.harvard.edu/~matthewklau/popper.png
 [10] Indexing
 - Salt shaker 
 http://people.fas.harvard.edu/~matthewklau/salt_shaker1.jpg
-http://people.fas.harvard.edu/~matthewklau/salt_shaker2.png
 - Concept, simple indexing (vector, list, matrix/dataframe)
 On the board
-- Accessing elements
-- Skipping and "removing" elements
-- Re-assigning elements
-- Re-assign vectors
+- Accessing elements (e.g. x[1] and x[1:5])
+- Skipping and "removing" elements (e.g. x[-1], x[c(-1,-2,-3,-4,-5)] and x[-1:-5])
+- Re-assigning elements (e.g. x[5] <- 10 and x[1:5] <- c(5,5,5,5,5)
+and x[1:5] <- 5)
 
 [5] Getting Help! 
 - (?, help, ??) 
@@ -28,12 +27,12 @@ On the board
 https://stackoverflow.com/questions/38332621/subsetting-a-matrix-addressing-colnames
 
 [9] Setup a new script in src with the following comments
-- Import data into R
-- Check data 
-- Clean data (subset, re-assign and rename)
-- Conduct a correlation 
-- Create a bivariate plot
-- Save the plot to results
+## Import data into R
+## Check data 
+## Clean data (subset, re-assign and rename)
+## Conduct a correlation 
+## Create a bivariate plot
+## Save the plot to results
 
 [1] Set the working directory to your project's main folder
 
