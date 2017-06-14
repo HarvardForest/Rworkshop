@@ -1,25 +1,77 @@
-[5] Big Picture and Recap
-- popper diagram
-- http://people.fas.harvard.edu/~matthewklau/popper.png
-
-[10] Scripting BP and Getting Help! and the Broader R Community
-
-[30] Indexing
-- Simple indexing (vector, matrix, array, list, dataframe)
-- Subsetting (columns, rows, col*row)
-- Re-assigning elements
-- Challenge Exercise
-
-[45] Scientific Workflow Lab
+[5] Overview: Scientific Workflow Lab 
+http://people.fas.harvard.edu/~matthewklau/popper.png
 - Simple project from data to code to analysis to figures
 - Save Data to data directory
 - Import data into R
-- Check data and clean data
+- Check data and clean data (subset, re-assign and rename)
 - Conduct a correlation analysis
 - Create a bivariate plot
 - Save the plot to results
+- Packaging 
 
+[5] Setup a new project directory on your desktop
 
+[10] Indexing
+- Salt shaker 
+http://people.fas.harvard.edu/~matthewklau/salt_shaker1.jpg
+http://people.fas.harvard.edu/~matthewklau/salt_shaker2.png
+- Concept, simple indexing (vector, list, matrix/dataframe)
+On the board
+- Accessing elements
+- Skipping and "removing" elements
+- Re-assigning elements
+- Re-assign vectors
 
+[5] Getting Help! 
+- (?, help, ??) 
+- Broader R Community (google, stackoverflow)
+https://stackoverflow.com/questions/38332621/subsetting-a-matrix-addressing-colnames
 
+[9] Setup a new script in src with the following comments
+- Import data into R
+- Check data 
+- Clean data (subset, re-assign and rename)
+- Conduct a correlation 
+- Create a bivariate plot
+- Save the plot to results
 
+[1] Set the working directory to your project's main folder
+
+Once folks have this Matt and Luca will give them the data they're
+going to use:
+write.csv(iris[,1:2],file='~/Desktop/iris.csv',row.names=FALSE)
+
+[5] Scripting BP 
+http://swcarpentry.github.io/r-novice-gapminder/16-wrap-up/
+- Short object names (avoid longer than 6 characters)
+- "<-" for assignments
+- Double quotes for character inputs to arguments
+- Break lines after commas and group sections of code that make sense together
+- Annotate to break into sections
+
+[10] Scripting
+- Import data
+- Clean data for the following issues 
+0. Change the next to last value in the first variable to 5.5
+1. Remove the first 5 obs
+- Conduct a correlation (use the help system to find the function)
+
+[10] Basics of plotting
+- base R plot
+- Formatting arguments (cex)
+- Labelling arguments
+- Layering (points)
+- Layering (lines)
+- output types (pdf,jpeg)
+- Graphics device
+- dev.off()
+
+[10] Scripting
+- Create a plot
+- Explore the plotting features
+- Use help and stackoverflow
+- Write out your plot to the results directory
+
+[10] Surveys wrap-up
+- Class survey
+- Evening sessions
